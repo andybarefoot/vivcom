@@ -9,7 +9,7 @@ html {
 body {
 	font-family: 'Lato', sans-serif;
 	color: #2F2D2E;
-	background-color: #ffffff;
+	background-color: #B8C4BB;
 	line-height: 1.4em;
 }
 
@@ -19,7 +19,7 @@ body {
 	z-index: 10;
 	width: 100%;
 	border-bottom: 1px solid #1fb3a9;
-
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.27);
 }
 
 nav {
@@ -27,7 +27,6 @@ nav {
 	margin:auto;
 	xbackground-color: #eeeeee;
 	height: 70px;
-	line-height: 70px;
 }
 
 #logo{
@@ -75,7 +74,12 @@ nav li a{
 	margin: auto;
 	padding-top: 80px;
 	padding-bottom: 100px;
-	xbackground-color: #dddddd;
+	background-color: #f7feff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+}
+
+#main-body ul, #main-body ol{
+	margin: 0 15px 10px 15px;
 }
 
 .featured-section {
@@ -109,6 +113,7 @@ img {
 table {
 	margin: 15px;
 	font-size: 0.8em;
+	background-color: #ffffff;
 }
 
 td {
@@ -150,9 +155,6 @@ p {
 	margin: 0 15px 10px 15px;
 }
 
-ol,ul {
-	margin: 0 15px 10px 15px;
-} 
 a.button {
 	color: #ffffff;
 	padding: 10px 40px 10px 40px ;
@@ -231,6 +233,7 @@ td {
 		float: right;
 		display: block;
 		margin-right: 15px;
+		margin-bottom: 0;
 		width: auto;
 	}
 	nav li {

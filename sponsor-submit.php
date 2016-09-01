@@ -72,7 +72,7 @@ $message .= "Gender: ".$gender."\n";
     <body>
         <div id="navigation">
             <nav>
-                <a href="/">
+                <a href="index.html">
                     <img id="logo" src="images/vvcf-logo.png" alt="Vision for Vulnerable Communities Foundation">
                 </a>
                 <img id="menu-icon" src="images/menu.png">
