@@ -191,6 +191,24 @@ img.chart {
 	border: $highlightBorder;
 }
 
+.gallery {
+	margin: $leftGutter 0 $leftGutter 0;
+}
+
+.gallery-frame:first-of-type {
+	width: 100%;
+	display: block;
+}
+
+.gallery-frame {
+	display: none;
+}
+
+.clear-all {
+	width: 100%;
+	clear: both;
+}
+
 // FEATURED SECTION
 
 .featured-section {
@@ -258,6 +276,31 @@ img.chart {
 		margin-left: 2%;
 		margin-bottom: $leftGutter;
 		border: $highlightBorder;
+	}
+
+	.gallery {
+		margin: $leftGutter;
+	}
+
+	.gallery-frame:first-of-type {
+		position: relative;
+		width: 66.66666%;
+		padding-bottom: 44.44444%;
+		float: left;
+	}
+
+	.gallery-frame {
+		display: block;
+		position: relative;
+		width: 33.333333%;
+		padding-bottom: 22.22222%;
+		float: left;
+		overflow: hidden;
+	}
+
+	.gallery-frame img{
+	  position: absolute;
+	  top: 0; bottom: 0; left: 0; right: 0;
 	}
 }
 

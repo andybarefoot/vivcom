@@ -7,6 +7,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <!-- photoswipe -->
+        <link rel="stylesheet" href="../pswipe/photoswipe.css"> 
+        <link rel="stylesheet" href="../pswipe/default-skin/default-skin.css"> 
+        <script src="../pswipe/photoswipe.min.js"></script> 
+        <script src="../pswipe/photoswipe-ui-default.min.js"></script> 
+        <!-- photoswipe ends -->
         <script>
             jQuery(document).ready(function( $ ) {
                 $(window).resize(function() {
@@ -31,7 +37,43 @@
                         $("#programMenu").slideToggle();
                     });
                 });
+
+                $("#gallery1").attr("src",photoArray[0].src);
+                $("#gallery2").attr("src",photoArray[1].src);
+                $("#gallery3").attr("src",photoArray[2].src);
             });
+
+            var photoArray = [
+                {src: '../images/programs/agriculture01.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture02.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture03.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture04.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture05.jpg',w: 960,h: 540},
+                {src: '../images/programs/agriculture06.jpg',w: 1280,h: 960},
+                {src: '../images/programs/agriculture07.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture08.jpg',w: 960,h: 720},
+                {src: '../images/programs/agriculture09.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture10.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture11.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture12.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture13.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture14.jpg',w: 1500,h: 1125},
+                {src: '../images/programs/agriculture15.jpg',w: 1448,h: 972},
+                {src: '../images/programs/agriculture16.jpg',w: 1500,h: 996},
+                {src: '../images/programs/agriculture17.jpg',w: 1500,h: 1125}
+            ];
+
+            var openPhotoSwipe = function(id) {
+                var pswpElement = document.querySelectorAll('.pswp')[0];
+                // build items array
+                var items = photoArray;
+                // define options (if needed)
+                var options = {
+                    index: id
+                };
+                var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
         </script>
     </head>
     <body>
@@ -69,13 +111,55 @@
                 </ul>
             </nav>
         </div>
-    <div id="main-body">
-        <h1>Agricultural Project/Granary/Food Basket</h1>
-        <h2>Farming</h2>
-        <p>VIVCOM Foundation stretches out into agriculture and the vision homes work towards contributing to the food security of the entire homestead, this begins when the Vision homestead identifies a project that seems tenable to support the entire stead granary/ food basket, each vision home is required to do some rearing so as to improve on the family income as well as supplement the home diet. During the holiday (School break) Vision children have a program of visiting the agricultural projects of their homesteads so that they get involved in the work going on as well as learn hands on.</p>
-        <h2>Feeding program</h2>
-        <p>VIVCOM concedes that most of the vulnerable households thrive on one or no meal a day and this has negatively affected families forcing children into dubious acts such as child labor, petty commercial sex and school drop outs to fend for their families, VIVCOM therefore asserts with the VIVCOM feeding program which is composed of food commodities both donated and those generated from the VIVCOM agricultural projects as well as projects initiated by the Vision homesteads such a vice can be toppled.</p>
-        <p>VIVCOM therefore works with any well-wisher individual, or organization with a philanthropic desire to extend a donation, grant or any contribution to the VIVCOM Food Basket (VFB) i.e. the feeding program.</p>
-    </div>
+        <div id="main-body">
+            <h1>Agricultural Project/Granary/Food Basket</h1>
+            <h2>Farming</h2>
+            <div class="gallery">
+                <div class="gallery-frame"><a href="javascript:openPhotoSwipe(0);"><img id="gallery1" src="../pswipe/default-skin/preloader.gif"></a></div>
+                <div class="gallery-frame"><a href="javascript:openPhotoSwipe(1);"><img id="gallery2" src="../pswipe/default-skin/preloader.gif"></a></div>
+                <div class="gallery-frame"><a href="javascript:openPhotoSwipe(2);"><img id="gallery3" src="../pswipe/default-skin/preloader.gif"></a></div>
+                <div class="clear-all"></div>
+            </div>
+            <p>VIVCOM Foundation stretches out into agriculture and the vision homes work towards contributing to the food security of the entire homestead, this begins when the Vision homestead identifies a project that seems tenable to support the entire stead granary/ food basket, each vision home is required to do some rearing so as to improve on the family income as well as supplement the home diet. During the holiday (School break) Vision children have a program of visiting the agricultural projects of their homesteads so that they get involved in the work going on as well as learn hands on.</p>
+            <h2>Feeding program</h2>
+            <p>VIVCOM concedes that most of the vulnerable households thrive on one or no meal a day and this has negatively affected families forcing children into dubious acts such as child labor, petty commercial sex and school drop outs to fend for their families, VIVCOM therefore asserts with the VIVCOM feeding program which is composed of food commodities both donated and those generated from the VIVCOM agricultural projects as well as projects initiated by the Vision homesteads such a vice can be toppled.</p>
+            <p>VIVCOM therefore works with any well-wisher individual, or organization with a philanthropic desire to extend a donation, grant or any contribution to the VIVCOM Food Basket (VFB) i.e. the feeding program.</p>
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

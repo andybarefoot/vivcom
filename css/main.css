@@ -138,6 +138,20 @@ img.chart {
   margin-bottom: 15px;
   border: 1px solid #1fb3a9; }
 
+.gallery {
+  margin: 15px 0 15px 0; }
+
+.gallery-frame:first-of-type {
+  width: 100%;
+  display: block; }
+
+.gallery-frame {
+  display: none; }
+
+.clear-all {
+  width: 100%;
+  clear: both; }
+
 .featured-section {
   margin: 30px 0 30px 0;
   padding: 1px 0 1px 0;
@@ -189,7 +203,31 @@ img.chart {
     width: 47%;
     margin-left: 2%;
     margin-bottom: 15px;
-    border: 1px solid #1fb3a9; } }
+    border: 1px solid #1fb3a9; }
+
+  .gallery {
+    margin: 15px; }
+
+  .gallery-frame:first-of-type {
+    position: relative;
+    width: 66.66666%;
+    padding-bottom: 44.44444%;
+    float: left; }
+
+  .gallery-frame {
+    display: block;
+    position: relative;
+    width: 33.333333%;
+    padding-bottom: 22.22222%;
+    float: left;
+    overflow: hidden; }
+
+  .gallery-frame img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; } }
 @media screen and (min-width: 900px) {
   nav ul {
     float: right;
