@@ -9,9 +9,26 @@
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <script>
             jQuery(document).ready(function( $ ) {
+                $(window).resize(function() {
+                    if($( window ).width()>=900){
+                        $("#menu").show();
+                    }
+                });
                 $(function(){
                     $("#menu-icon").click(function(){
                         $("#menu").slideToggle();
+                    });
+                });
+                $(function(){
+                    $(".about-link").click(function(){
+                        $("#programMenu").hide();
+                        $("#aboutMenu").slideToggle();
+                    });
+                });
+                $(function(){
+                    $(".program-link").click(function(){
+                        $("#aboutMenu").hide();
+                        $("#programMenu").slideToggle();
                     });
                 });
             });
@@ -25,8 +42,27 @@
                 </a>
                 <img id="menu-icon" src="../images/menu.png">
                 <ul id="menu">
-                    <li><a href="../about-us.html">About Us</a></li>
-                    <li><a href="../programs.html">Programs</a></li>
+                    <li><a href="#" class="about-link">About Us</a></li>
+                    <li class="sub-menu"><ul id="aboutMenu">
+                        <li><a href="../team/syrill-kizza.html">Syrill Kizza</a></li>
+                        <li><a href="../team/brenda-econia.html">Brenda Econia</a></li>
+                        <li><a href="../team/abraham-olupot.html">Abraham Olupot</a></li>
+                        <li><a href="../team/kisinde-arthur.html">Kisinde Rogers Arthur</a></li>
+                        <li><a href="../team/lukanga-godfrey.html">Lukanga Musoke Godfrey</a></li>
+                    </ul></li>
+                    <li><a href="#" class="program-link">Programs</a></li>
+                    <li class="sub-menu"><ul id="programMenu">
+                        <li><a href="../programs/ets.html">Education and Training Support (ETS) Program</a></li>
+                        <li><a href="../programs/ccs.html">Counseling and Care Support (CCS) Program</a></li>
+                        <li><a href="../programs/vip.html">Volunteer and Internship Placement (V.I.P) Program</a></li>
+                        <li><a href="../programs/cep.html">Cultural Exchange Program</a></li>
+                        <li><a href="../programs/health-care.html">Health Care</a></li>
+                        <li><a href="../programs/agricultural.html">Agricultural Project/Granary/Food Basket</a></li>
+                        <li><a href="../programs/social.html">Social & Spiritual Development</a></li>
+                        <li><a href="../programs/sports.html">Sports and Leisure</a></li>
+                        <li><a href="../programs/efr.html">Economic and Fundraisng (EFR) Program</a></li>
+                        <li><a href="../programs/business.html">Business Development</a></li>
+                    </ul></li>
                     <li><a href="../sponsor-a-child.html">Sponsor a Child</a></li>
                     <li><a href="../donate.html" class="button">Donate</a></li>
                     <li><a href="../contact-us.html">Contact Us</a></li>
@@ -35,7 +71,7 @@
         </div>
     <div id="main-body">
         <h1>Lukanga Musoke Godfrey: Treasurer</h1>
-        <img class="text-photo" src="/images/team/lukanga.jpg">
+        <img class="text-photo" src="../images/team/lukanga.jpg">
         <p>My name is Lukanga Musoke Godfrey, born on 22nd-June-1990 in Kampala slums, my life was full of challenges, hardships, discomfort and a series of disappointment, living in the ghetto taught me many lessons in life, that being poor in life confronts you with all sorts of diminishing behaviors like drug abuse, prostitution and the list is endless, This abject poverty champions the choices in your life, since your voice is always inferior in the community. Children are confronted with a lot of challenges which a few can overcome and the rest fail and end up becoming un-fit in society.</p>
         <p>So I joined VIVCOM Foundation to use my skills to bring impact in the marginalized communities and empower them for sustainable development but this vision can be realized if you different stakeholders join hands with us to make the future of the children secured.</p>
         <p>Behold children are a heritage from the Lord, the fruit of the womb a reward, like arrows in the hand of a warrior are the children of one’s youth. Blessed is the man who fills his quiver with them! He shall not be put to shame when he speaks with his enemies in the gate.Psalms127:3-5</p>
