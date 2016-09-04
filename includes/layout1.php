@@ -1,4 +1,5 @@
         <script>
+/*
             jQuery(document).ready(function( $ ) {
                 $(window).resize(function() {
                     equalColumns();
@@ -17,4 +18,5 @@
                     $("#secondary-content").css('height','auto');
                 }
             }
+*/
         </script>

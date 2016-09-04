@@ -325,9 +325,6 @@ img.chart {
     float: right;
     border: 1px solid #1fb3a9; } }
 @media screen and (min-width: 1200px) {
-  .text-photo {
-    width: 600px; }
-
   #aboutMenu {
     left: calc(50% - 125px); } }
 
