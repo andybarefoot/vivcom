@@ -1,0 +1,16 @@
+#primary-content {
+  width: 100%; }
+
+#secondary-content {
+  width: 100%; }
+
+@media screen and (min-width: 900px) {
+  #primary-content {
+    width: 65%;
+    float: left; }
+
+  #secondary-content {
+    width: 35%;
+    float: right; } }
+
+/*# sourceMappingURL=layout01.css.map */

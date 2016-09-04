@@ -1,0 +1,25 @@
+#primary-content{
+	width:100%;
+}
+#secondary-content{
+	width:100%;
+}
+
+
+@media screen and (min-width: 600px){	
+}
+
+@media screen and (min-width: 900px){	
+	#primary-content{
+		width:65%;
+		float:left;
+	}
+	#secondary-content{
+		width:35%;
+		float:right;
+	}
+}
+
+@media screen and (min-width: 1200px){	
+}
+

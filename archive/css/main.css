@@ -111,7 +111,8 @@ nav li a {
 #main-body {
   max-width: 1150px;
   margin: auto;
-  padding-top: 70px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   background-color: #f7feff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27); }
 
@@ -121,34 +122,6 @@ nav li a {
 #main-body li {
   list-style-type: square;
   margin-left: 18px; }
-
-#primary-content {
-  padding-top: 20px;
-  padding-bottom: 50px; }
-
-#secondary-content {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  color: #f7feff;
-  background-color: #1C3144; }
-
-#footer {
-  width: 100%;
-  height: 52px;
-  clear: both;
-  color: #ffffff;
-  background-color: #1fb3a9; }
-
-#legal {
-  margin: 0 0 0 15px;
-  line-height: 52px; }
-
-#social {
-  margin: 10px 15px 0 0;
-  float: right; }
-
-.social-icon {
-  margin: 0 0 0 10px; }
 
 table {
   margin: 15px;
@@ -219,29 +192,12 @@ img.chart {
   width: 100%;
   height: 100%; }
 
-.team-member {
-  width: 50%;
-  float: left;
-  margin-bottom: 25px; }
-
-.team-member img {
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.team-member h2 {
-  margin-top: 5px;
-  margin-bottom: 5px; }
-
-.team-member p {
-  margin-top: 5px;
-  margin-bottom: 5px; }
-
 @media screen and (min-width: 600px) {
   .text-photo {
-    width: 50%;
-    margin: 5px 15px 5px 5px;
-    border: 1px solid #1fb3a9;
-    float: right; }
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #1fb3a9; }
 
   img.chart {
     width: 47%;
@@ -317,6 +273,15 @@ img.chart {
     margin: 0;
     margin-left: 2%;
     float: left; }
+
+  .team-member {
+    margin-top: 20px;
+    clear: both; }
+
+  .text-photo {
+    width: 450px;
+    float: right;
+    border: 1px solid #1fb3a9; }
 
   .featured-section {
     width: 50%;

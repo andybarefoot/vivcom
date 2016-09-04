@@ -4,14 +4,12 @@ $highlightColour: #1fb3a9;
 $navBGcolour: #ffffff;
 $mainBGcolour: #f7feff;
 $edgesBGcolour: #B8C4BB;
-$secondaryColour: #1C3144;
 
 // sizes
 $navHeight: 70px;
 $navWidth: 1200px;
 $contentWidth: 1150px;
 $leftGutter: 15px;
-$footerHeight: 52px;
 
 $highlightBorder: 1px solid $highlightColour;
 $shadow: 0 0 10px rgba(0, 0, 0, 0.27);
@@ -160,7 +158,8 @@ nav li a{
 #main-body {
 	max-width: $contentWidth;
 	margin: auto;
-	padding-top: $navHeight;
+	padding-top: $navHeight + 10px;
+	padding-bottom: 100px;
 	background-color: $mainBGcolour;
     box-shadow: $shadow;
 }
@@ -173,42 +172,6 @@ nav li a{
 	list-style-type: square;
     margin-left: 18px; 
 }
-
-#primary-content{
-	padding-top: 20px;
-	padding-bottom: 50px;
-}
-
-#secondary-content{
-	padding-top: 20px;
-	padding-bottom: 50px;
-	color: $mainBGcolour;
-	background-color: $secondaryColour;
-}
-
-#footer{
-	width: 100%;
-	height: $footerHeight;
-	clear:both;
-	color: $navBGcolour;
-	background-color: $highlightColour;
-}
-
-#legal {
-	margin: 0 0 0 $leftGutter;
-	line-height: $footerHeight;
-}
-
-#social {
-	margin: 10px $leftGutter 0 0;
-	float: right;
-}
-
-.social-icon {
-	margin: 0 0 0 10px;
-}
-
-
 
 table {
 	margin: $leftGutter;
@@ -300,32 +263,13 @@ img.chart {
 }
 
 
-.team-member{
-	width:50%;
-	float: left;		
-	margin-bottom: 25px;
-}
-.team-member img{
-	padding-left: $leftGutter;
-	padding-right: $leftGutter;
-}
-.team-member h2{
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.team-member p{
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-
 
 @media screen and (min-width: 600px){	
 	.text-photo {
-		width: 50%;
-		margin: 5px $leftGutter 5px 5px;
+		width: 90%;
+		margin-left: $leftGutter;
+		margin-right: $leftGutter;
 		border: $highlightBorder;
-		float: right;
 	}
 	img.chart {
 		width: 47%;
@@ -409,7 +353,15 @@ img.chart {
 		margin-left: 2%;
 		float: left;
 	}
-
+	.team-member{
+		margin-top: 20px;
+		clear: both;
+	}
+	.text-photo{
+		width: 450px;
+		float: right;
+		border: 1px solid #1fb3a9;
+	}
 	.featured-section{
 		width: 50%;
 		margin-left: 15px;
