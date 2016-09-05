@@ -2,7 +2,7 @@
 
 $name = htmlspecialchars(trim($_POST["name"]));
 $email = htmlspecialchars(trim($_POST["email"]));
-$message = htmlspecialchars(trim($_POST["message"]));
+$usermessage = htmlspecialchars(trim($_POST["message"]));
 
 $dataClean = true;
 $errorStr= "";
@@ -18,7 +18,7 @@ if (strlen($email) == 0) {
     $errorStr.=" - &quot;".$email ."&quot; is not a valid email address.<br/>";
     $dataClean = false;
 }
-if (strlen($message) == 0) {
+if (strlen($usermessage) == 0) {
     $errorStr.="The &quot;Message&quot; field can not be left blank.<br/>";
     $dataClean = false;
 }
@@ -28,7 +28,7 @@ $subject = "VIVCOM Contact Us Form";
 $message = "Contact Us message:\n";
 $message .= "Name: ".$name."\n";
 $message .= "Email: ".$email."\n";
-$message .= "Message: ".$message."\n";
+$message .= "Message: ".$usermessage."\n";
 
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ $message .= "Message: ".$message."\n";
     include 'includes/linksScripts.php';
     include 'includes/layout1.php';
 ?>
-        <link rel="stylesheet" type="text/css" href="../css/layout01.css">
+        <link rel="stylesheet" type="text/css" href="css/layout01.css">
     </head>
     <body>
 <?php
