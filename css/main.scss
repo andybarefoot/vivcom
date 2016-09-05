@@ -86,6 +86,7 @@ a.button {
 }
 
 label {
+	vertical-align: top;
 	display: inline-block;
     width: 170px;
 }
@@ -94,6 +95,14 @@ input[type=text] {
     border: $highlightBorder;
     border-radius: 2px;
     width: 200px;
+}
+
+textarea {
+	margin-top: 5px;
+    border: $highlightBorder;
+    border-radius: 2px;
+    width: 400px - (2 * $leftGutter);
+    height: 200px;
 }
 
 
@@ -194,9 +203,15 @@ nav li a{
 	background-color: $highlightColour;
 }
 
-#legal {
+#legal1 {
 	margin: 0 0 0 $leftGutter;
 	line-height: $footerHeight;
+	display: none;
+}
+#legal2 {
+	margin: 0 0 0 $leftGutter;
+	line-height: $footerHeight;
+	display: block;
 }
 
 #social {
@@ -358,6 +373,12 @@ img.chart {
 	  position: absolute;
 	  top: 0; bottom: 0; left: 0; right: 0;
 	}
+	#legal1 {
+		display: block;
+	}
+	#legal2 {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 900px){	
@@ -422,6 +443,9 @@ img.chart {
 @media screen and (min-width: 1200px){	
 	#aboutMenu{
 		left: calc(50% - 125px);
+	}
+	textarea {
+	    width: 500px;
 	}
 }
 

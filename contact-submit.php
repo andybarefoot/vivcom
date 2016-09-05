@@ -1,3 +1,36 @@
+<?
+
+$name = htmlspecialchars(trim($_POST["name"]));
+$email = htmlspecialchars(trim($_POST["email"]));
+$message = htmlspecialchars(trim($_POST["message"]));
+
+$dataClean = true;
+$errorStr= "";
+
+if (strlen($name) == 0) {
+    $errorStr.="The &quot;Name&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($email) == 0) {
+    $errorStr.="The &quot;Email&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}else if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+    $errorStr.=" - &quot;".$email ."&quot; is not a valid email address.<br/>";
+    $dataClean = false;
+}
+if (strlen($message) == 0) {
+    $errorStr.="The &quot;Message&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+
+$to = "andy@andybarefoot.com";
+$subject = "VIVCOM Contact Us Form";
+$message = "Contact Us message:\n";
+$message .= "Name: ".$name."\n";
+$message .= "Email: ".$email."\n";
+$message .= "Message: ".$message."\n";
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,11 +41,6 @@
     include 'includes/layout1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
-        <script>
-            function submitForm(){
-              $("#contact").submit();
-            }
-            </script>
     </head>
     <body>
 <?php
@@ -20,23 +48,19 @@
 ?>
         <div id="main-body">
             <div id="primary-content">
-                <form id="contact" action="contact-submit.php" method="POST">
-                    <h1>Contact Us</h1>
-                    <h2>Get In Touch</h2>
-                    <p>We will be delighted to get in touch with you on any matters relating to our organization and our programs. Please use the email form below to contact us. Alternatively, we can be contacted by post or by phone using the addresses on this page:</p>
-                    <p> 
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name"><br/>
-                        
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email"><br/>
-
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message"></textarea>
-                    </p>
-                    <p class="button-holder"><a href="javascript:submitForm();" class="button">Submit Form</a></p>
-                </form>
-            </div>
+               <h1>Contact Us:</h1>
+ <?
+    if($dataClean){
+        mail($to,$subject,$message);
+?>
+                <p>Thank you for your message.</p>
+ <?
+    }else{
+            print "<p>There were some issues with your details. Please <a href='javascript:history.go(-1)'>go back</a> and correct the following issues:</p>";
+            print "<p>".$errorStr."</p>";
+    }
+?>
+             </div>
             <div id="secondary-content">
                 <h2>Address:</h2>
                 <p><strong>Vision For Vulnerable Communities Foundation</strong><br/>

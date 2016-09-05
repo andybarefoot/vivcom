@@ -54,6 +54,7 @@ a.button {
   text-decoration: none; }
 
 label {
+  vertical-align: top;
   display: inline-block;
   width: 170px; }
 
@@ -61,6 +62,13 @@ input[type=text] {
   border: 1px solid #1fb3a9;
   border-radius: 2px;
   width: 200px; }
+
+textarea {
+  margin-top: 5px;
+  border: 1px solid #1fb3a9;
+  border-radius: 2px;
+  width: 370px;
+  height: 200px; }
 
 nav {
   max-width: 1200px;
@@ -139,9 +147,15 @@ nav li a {
   color: #ffffff;
   background-color: #1fb3a9; }
 
-#legal {
+#legal1 {
   margin: 0 0 0 15px;
-  line-height: 52px; }
+  line-height: 52px;
+  display: none; }
+
+#legal2 {
+  margin: 0 0 0 15px;
+  line-height: 52px;
+  display: block; }
 
 #social {
   margin: 10px 15px 0 0;
@@ -271,7 +285,13 @@ img.chart {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; } }
+    right: 0; }
+
+  #legal1 {
+    display: block; }
+
+  #legal2 {
+    display: none; } }
 @media screen and (min-width: 900px) {
   nav ul {
     float: right;
@@ -326,6 +346,9 @@ img.chart {
     border: 1px solid #1fb3a9; } }
 @media screen and (min-width: 1200px) {
   #aboutMenu {
-    left: calc(50% - 125px); } }
+    left: calc(50% - 125px); }
+
+  textarea {
+    width: 500px; } }
 
 /*# sourceMappingURL=main.css.map */

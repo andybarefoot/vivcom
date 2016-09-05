@@ -98,7 +98,7 @@ $message .= "Gender: ".$gender."\n";
                 <table>
  <?
     }else{
-            print "<p>There were some issues with your details. Please <a href='javascript:goBack();'>go back</a> and correct the following issues:</p>";
+            print "<p>There were some issues with your details. Please <a href='javascript:history.go(-1)'>go back</a> and correct the following issues:</p>";
             print "<p>".$errorStr."</p>";
     }
 ?>
