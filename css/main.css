@@ -333,18 +333,18 @@ img.chart {
   #menu-icon {
     display: none; }
 
-  table.chart {
-    width: 47%;
-    margin: 0;
-    margin-left: 2%;
-    float: left; }
-
   .featured-section {
     width: 50%;
     margin: 5px 15px 5px 15px;
     float: left;
     border: 1px solid #1fb3a9; } }
 @media screen and (min-width: 1200px) {
+  table.chart {
+    width: 47%;
+    margin: 0;
+    margin-left: 2%;
+    float: left; }
+
   #aboutMenu {
     left: calc(50% - 125px); }
 

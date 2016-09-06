@@ -425,12 +425,6 @@ img.chart {
 		display: none;
 	}
 
-	table.chart {
-		width: 47%;
-		margin: 0;
-		margin-left: 2%;
-		float: left;
-	}
 
 	.featured-section{
 		width: 50%;
@@ -441,6 +435,12 @@ img.chart {
 }
 
 @media screen and (min-width: 1200px){	
+	table.chart {
+		width: 47%;
+		margin: 0;
+		margin-left: 2%;
+		float: left;
+	}
 	#aboutMenu{
 		left: calc(50% - 125px);
 	}

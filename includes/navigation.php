@@ -16,6 +16,7 @@
                     </ul></li>
                     <li><a href="#" class="program-link">Programs</a></li>
                     <li class="sub-menu"><ul id="programMenu">
+                        <li><a href="programs.php">Program Overview</a></li>
                         <li><a href="programs/ets.php">Education and Training Support (ETS) Program</a></li>
                         <li><a href="programs/ccs.php">Counseling and Care Support (CCS) Program</a></li>
                         <li><a href="programs/vip.php">Volunteer and Internship Placement (V.I.P) Program</a></li>
