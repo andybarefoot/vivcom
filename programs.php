@@ -5,7 +5,13 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include 'includes/linksScripts.php';
+    include 'includes/galleryScripts.php';
 ?>
+        <script>
+            var photoArray = [
+                {src: 'images/program-chart.png',w: 1398,h: 1048}
+            ];
+        </script>
     </head>
     <body>
 <?php
@@ -14,6 +20,9 @@
         <div id="main-body">
             <div id="primary-content">
                 <h1>Programs</h1>
+                <div class="gallery">
+                    <a href="javascript:openPhotoSwipe(0);"><img id="gallery1" src="images/program-chart.png"></a>
+                </div>
                 <h2>Strategy</h2>
                 <p>The VIVCOM Foundation Model of operation will be duplicated in all the communities we operate. We identify vulnerable homestead establish a net worked homestead i.e. big extended family to which we jointly work towards improving the standards of living of the entire home stead through empowerment. Empowerment to us means each single home in the home stead initiates an idea, innovates or adds value to that idea, grows the idea and replicates the idea to the wider home stead. As VIVCOM we acknowledge that families meet different challenges and we therefore encourage our families to participate actively in the choice of a remedy to the problems they face, hence the more choices the families make in lessening the problems they face, the more empowered they become, such remedies can therefore be transferred to others families in the wider home stead facing such similar challenges. VIVCOM provides a complete extended family structure where society members are mindful, responsible, and compassionate and care for others holistically. This networked family system aims at providing physical, emotional, spiritual and financial support to the wider homestead. VIVCOM Foundation will stretch out into farming, technical and vocational education as a means of sustainability and as another layer to strengthen the homesteads</p>
                 <h2>Statistics</h2>
@@ -119,5 +128,8 @@
     include 'includes/footer.php';
 ?>
         </div>
+<?php
+    include 'includes/galleryOverlay.php';
+?>
     </body>
 </html>

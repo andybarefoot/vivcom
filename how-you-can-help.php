@@ -5,8 +5,25 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include 'includes/linksScripts.php';
+    include 'includes/galleryScripts.php';
     include 'includes/layout1.php';
 ?>
+        <script>
+            var photoArray = [
+                {src: 'images/help/help1.jpg',w: 1200,h: 900},
+                {src: 'images/help/help2.jpg',w: 1200,h: 900},
+                {src: 'images/help/help3.jpg',w: 816,h: 612},
+                {src: 'images/help/help4.jpg',w: 960,h: 720},
+                {src: 'images/help/help5.jpg',w: 960,h: 720},
+                {src: 'images/help/help6.jpg',w: 960,h: 720},
+                {src: 'images/help/help7.jpg',w: 960,h: 720},
+                {src: 'images/help/help8.jpg',w: 960,h: 720},
+                {src: 'images/help/help9.jpg',w: 1200,h: 900},
+                {src: 'images/help/help10.jpg',w: 1200,h: 900},
+                {src: 'images/help/help11.jpg',w: 1200,h: 900},
+                {src: 'images/help/help12.jpg',w: 1200,h: 675}
+            ];
+        </script>
         <link rel="stylesheet" type="text/css" href="css/layout01.css">
     </head>
     <body>
@@ -21,6 +38,9 @@
                 <p>Offer a discounted quality and quantity of your delicious doughnuts, and confirm to our customers that you are doing this for charity, this is a fun way of raising money because it increases your sales and hence send the money to our project.</p>
                 <h2>Sponsorship Forms</h2>
                 <p>This is where innovative and clever ideas work best. Would a local sports team grow beards, go bald? Would a local company have a "dress down" day? Many people love doing daft things for charity and take great delight in doing something with a real purpose. Ask for our special sponsorship forms and get cracking.</p>
+<?php
+    include 'includes/gallery1.php';
+?>
                 <h2>Smartie Tube</h2>
                 <p>The old ideas are often the best ones. You give your friends, work colleagues, neighbors a tube of Smarties on the condition they pop in a $2 U.S Dollars then hand it back when full. A Smarties tube will raise a whopping $54. Go on, try it!</p>
                 <h2>Bag Packing</h2>
@@ -94,5 +114,8 @@
     include 'includes/footer.php';
 ?>
         </div>
+<?php
+    include 'includes/galleryOverlay.php';
+?>
     </body>
 </html>

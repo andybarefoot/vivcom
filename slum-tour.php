@@ -11,11 +11,21 @@
 ?>
         <script>
             var photoArray = [
-                {src: 'images/home/home-01.jpg',w: 722,h: 481},
-                {src: 'images/home/home-02.jpg',w: 722,h: 481},
-                {src: 'images/home/home-03.jpg',w: 722,h: 481},
-                {src: 'images/home/home-04.jpg',w: 722,h: 481},
-                {src: 'images/home/home-05.jpg',w: 595,h: 400}
+                {src: 'images/slumtour/slumtour1.jpg',w: 900,h: 600},
+                {src: 'images/slumtour/slumtour2.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour3.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour4.jpg',w: 960,h: 720},
+                {src: 'images/slumtour/slumtour5.jpg',w: 700,h: 525},
+                {src: 'images/slumtour/slumtour6.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour7.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour8.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour9.jpg',w: 1200,h: 900},
+                {src: 'images/slumtour/slumtour10.jpg',w: 541,h: 1182},
+                {src: 'images/slumtour/slumtour11.jpg',w: 960,h: 540},
+                {src: 'images/slumtour/slumtour12.jpg',w: 960,h: 540},
+                {src: 'images/slumtour/slumtour13.jpg',w: 960,h: 720},
+                {src: 'images/slumtour/slumtour14.jpg',w: 960,h: 960},
+                {src: 'images/slumtour/slumtour15.jpg',w: 1200,h: 900}
             ];
         </script>
         <link rel="stylesheet" type="text/css" href="css/layout01.css">
@@ -29,6 +39,9 @@
                 <h1>Slum Tour Kampala</h1>
                 <h2>Tour for a Cause</h2>
                 <p>We shall visit crowded homes, slum trenches, and valleys, red lights districts, historical sites, infrastructures and market places, religious monuments, flashy hotels, national treasures, community schools, Kampala behind the scenes, swamps, working centers, orphanages, slum talents and many more.</p>
+<?php
+    include 'includes/gallery1.php';
+?>
                 <p>What your tour contributions does for the organization:</p>
                 <ul>
                     <li>Paying school fees to orphans and vulnerable children</li>
