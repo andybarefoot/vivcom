@@ -82,6 +82,7 @@
                 <p class="button-holder"><a href="sponsor-form.php" class="button">Sponsor a Child</a></p>
                 <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
                 <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
+                <p class="button-holder"><a href="slum-tour.php" class="button">Slum Tour</a></p>
                 <p>&nbsp;</p>
                 <p>We also have lots of other ideas for how you can raise money to help <a href="how-you-can-help.php">here</a>.</p>
                 <h2>Email:</h2>
