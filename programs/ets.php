@@ -36,7 +36,7 @@
     include '../includes/gallery1.php';
 ?>
                 <p>Education prepares people for life by developing their character and career. We ensure all school age going children attend the project school situated in Nabweru south, however technical and vocational training will be given to older children.</p>
-                <p>Vision For Vulnerable Communities Foundation offers a vision Homestead Scholarship (VHS) to pupils who excel in our school, this scholarship program is managed from contributions made from each vision home accruing from the saving raised from the income generating activities from each vision home. This in doing ensures that vision parents and guardians are part and parcel to the child’s education, parents & guardians encourage children to read hard to get the award, positive competitiveness amongst vision families’ and so to motivate school age going children belonging to our project.</p>
+                <p>Vision For Vulnerable Communities Foundation offers a vision Homestead Scholarship (VHS) to pupils who excel in our school, this scholarship program is managed from contributions made from each vision home accruing from the saving raised from the income generating activities from each vision home. This in doing ensures that vision parents and guardians are part and parcel to the child's education, parents & guardians encourage children to read hard to get the award, positive competitiveness amongst vision families' and so to motivate school age going children belonging to our project.</p>
             </div>
            <div id="secondary-content">
                 <h2>Programs</h2>

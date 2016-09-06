@@ -33,8 +33,8 @@
 <?php
     include '../includes/gallery1.php';
 ?>
-                <p>(a) We organize charity walks and other fund raising activities so as to fundraise for the  organization.</p>
-                <p>(b) We operating income generating activities, such as shops, sale of art pieces, secretarial  services, like photocopying, etc.</p>
+                <p>(a) We organize charity walks and other fund raising activities so as to fundraise for the organization.</p>
+                <p>(b) We operating income generating activities, such as shops, sale of art pieces, secretarial services, like photocopying, etc.</p>
                 <p>(c) We guide tourists all over the world for Slum Tours through Kampala.</p>
             </div>
            <div id="secondary-content">

@@ -5,9 +5,17 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
  <?php
     include '../includes/linksScripts1.php';
+    include '../includes/galleryScripts1.php';
     include '../includes/layout1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
+        <script>
+            var photoArray = [
+                {src: '../images/programs/culture1.jpg',w: 960,h: 720},
+                {src: '../images/programs/culture2.jpg',w: 1200,h: 1080},
+                {src: '../images/programs/culture3.jpg',w: 960,h: 720}
+            ];
+        </script>
     </head>
     <body>
 <?php
@@ -16,8 +24,11 @@
         <div id="main-body">
             <div id="primary-content">
                 <h1>Cultural Exchange Program</h1>
+<?php
+    include '../includes/gallery1.php';
+?>
                 <h2>Summer Work Camp:</h2>
-                <p>Each summer Vision For Vulnerable Communities Foundation hosts volunteers from around the world for a month (four weeks), for the annual Summer Work Camp to support the organization in a specific project that will give back to the community. Volunteers have the   opportunity to get to work with people in the community and begin to understand the local context while engaging with the community they are supporting. We emphasize hands-on learning and cultural exchange. We have used this program to better reach the youth audience in Western countries looking to enrich a study-abroad or travel opportunity by visiting Uganda. These young people become a power resource and a network for VIVCOM Foundation to capitalize on.</p>
+                <p>Each summer Vision For Vulnerable Communities Foundation hosts volunteers from around the world for a month (four weeks), for the annual Summer Work Camp to support the organization in a specific project that will give back to the community. Volunteers have the opportunity to get to work with people in the community and begin to understand the local context while engaging with the community they are supporting. We emphasize hands-on learning and cultural exchange. We have used this program to better reach the youth audience in Western countries looking to enrich a study-abroad or travel opportunity by visiting Uganda. These young people become a power resource and a network for VIVCOM Foundation to capitalize on.</p>
             </div>
            <div id="secondary-content">
                 <h2>Programs</h2>
@@ -38,5 +49,8 @@
     include '../includes/footer1.php';
 ?>
         </div>
+<?php
+    include '../includes/galleryOverlay1.php';
+?>
     </body>
 </html>

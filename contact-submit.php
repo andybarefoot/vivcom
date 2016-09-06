@@ -23,7 +23,7 @@ if (strlen($usermessage) == 0) {
     $dataClean = false;
 }
 
-$to = "andy@andybarefoot.com";
+$to = "syrillkizza@gmail.com";
 $subject = "VIVCOM Contact Us Form";
 $message = "Contact Us message:\n";
 $message .= "Name: ".$name."\n";

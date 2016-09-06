@@ -5,9 +5,18 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
  <?php
     include '../includes/linksScripts1.php';
+    include '../includes/galleryScripts1.php';
     include '../includes/layout1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
+        <script>
+            var photoArray = [
+                {src: '../images/programs/business2.jpg',w: 960,h: 720},
+                {src: '../images/programs/business3.jpg',w: 960,h: 640},
+                {src: '../images/programs/business1.jpg',w: 320,h: 238},
+                {src: '../images/programs/business4.jpg',w: 340,h: 290}
+            ];
+        </script>
     </head>
     <body>
 <?php
@@ -17,6 +26,9 @@
         <div id="main-body">
             <div id="primary-content">
                 <h1>Business Development</h1>
+<?php
+    include '../includes/gallery1.php';
+?>
                 <p>This program is designed to offer our community the requisite hands on skills that can enable them transit from a life of insolvent and felony to a productive occupation. Here we came up with a list of programs as seen below:</p>
                 <h2>Arts & Local Crafts</h2>
                 <p>We design art and crafts to enable the community to gain valuable technical skills as well as expand their creative horizons. We inspire our artists to critically think, introspect and solve problems through creative designs that appeal to the everyday urban dweller. We teach our artists to appreciate the bond between art and culture as well as inspire them to explore new art styles.</p>
@@ -72,5 +84,8 @@
     include '../includes/footer1.php';
 ?>
         </div>
+<?php
+    include '../includes/galleryOverlay1.php';
+?>
     </body>
 </html>

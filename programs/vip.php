@@ -5,9 +5,17 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
  <?php
     include '../includes/linksScripts1.php';
+    include '../includes/galleryScripts1.php';
     include '../includes/layout1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
+        <script>
+            var photoArray = [
+                {src: '../images/programs/vip02.jpg',w: 480,h: 360},
+                {src: '../images/programs/vip01.jpg',w: 360,h: 240},
+                {src: '../images/home/home12.jpg',w: 1200,h: 900}
+            ];
+        </script>
     </head>
     <body>
 <?php
@@ -16,6 +24,9 @@
         <div id="main-body">
             <div id="primary-content">
                 <h1>Volunteer and Internship Placement (V.I.P) Program</h1>
+<?php
+    include '../includes/gallery1.php';
+?>
                 <p>We provide ethical, low-cost volunteering abroad programs in Uganda to people of all ages and backgrounds with opportunities to have an active part in helping develop a local community, and we accept donations to improve standard of life for the Orphans and Vulnerable Children and people affected and infected with HIV/AIDS</p>
                 <p>Volunteer Projects include: Community work, Medical work, Leisure & Sports Coaching, Teaching & Education, Environmental Conservation, Farming, Economic & Fundraising, Social and spiritual development, Expedition, Business development, Corporate Volunteering, Family Volunteering, Tailor-made opportunities for individuals and groups.</p>
                 <h2>Community Development</h2>
@@ -91,5 +102,8 @@
     include '../includes/footer1.php';
 ?>
         </div>
+<?php
+    include '../includes/galleryOverlay1.php';
+?>
     </body>
 </html>

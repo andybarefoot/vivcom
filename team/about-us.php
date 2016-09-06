@@ -10,11 +10,11 @@
 ?>
         <script>
             var photoArray = [
-                {src: '../images/home/home-01.jpg',w: 722,h: 481},
-                {src: '../images/home/home-02.jpg',w: 722,h: 481},
-                {src: '../images/home/home-03.jpg',w: 722,h: 481},
-                {src: '../images/home/home-04.jpg',w: 722,h: 481},
-                {src: '../images/home/home-05.jpg',w: 595,h: 400}
+                {src: '../images/home/home1.jpg',w: 722,h: 481},
+                {src: '../images/home/home2.jpg',w: 722,h: 481},
+                {src: '../images/home/home3.jpg',w: 722,h: 481},
+                {src: '../images/home/home4.jpg',w: 722,h: 481},
+                {src: '../images/home/home5.jpg',w: 595,h: 400}
             ];
         </script>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">

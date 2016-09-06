@@ -7,7 +7,7 @@
     include 'includes/linksScripts.php';
     include 'includes/layout1.php';
 ?>
-        <link rel="stylesheet" type="text/css" href="../css/layout01.css">
+        <link rel="stylesheet" type="text/css" href="css/layout01.css">
         <script>
             function submitForm(){
               $("#contact").submit();

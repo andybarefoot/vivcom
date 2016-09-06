@@ -5,7 +5,9 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include 'includes/linksScripts.php';
+    include 'includes/layout1.php';
 ?>
+        <link rel="stylesheet" type="text/css" href="css/layout01.css">
     </head>
     <body>
 <?php
@@ -73,6 +75,23 @@
                     <li>Boosting own CV.</li>
                     <li>Passing on your own Knowledge.</li>
                 </ol></p>
+                <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
+            </div>
+            <div id="secondary-content">
+                <h2>Address:</h2>
+                <p><strong>Vision For Vulnerable Communities Foundation</strong><br/>
+                    P.O BOX 72449<br/> Nabweru<br/> Wakiso<br/> (Uganda)</p>
+                <h2>Telephone:</h2>
+                <p>Tel: +256705152084<br/>Mob: +256775152084 / +256771874642</p>
+                <h2>Email:</h2>
+                <p>
+                    <ul>
+                        <li><a href="mailto:Info@visionforvulnerablecommunities.org">Info@visionforvulnerablecommunities.org</a></li>
+                        <li><a href="mailto:syrillkizza@gmail.com">syrillkizza@gmail.com</a></li>
+                        <li><a href="mailto:vivcomfoundation@gmail.com">vivcomfoundation@gmail.com</a></li>
+                    </ul>
+                </p>
+                <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
             </div>
 <?php
     include 'includes/footer.php';
