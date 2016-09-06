@@ -5,7 +5,9 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include 'includes/linksScripts.php';
+    include 'includes/layout1.php';
 ?>
+        <link rel="stylesheet" type="text/css" href="css/layout01.css">
     </head>
     <body>
 <?php
@@ -59,6 +61,34 @@
                 <p>With your church, class or family - Invite a group of friends or loved ones to share a sponsorship with you.</p>
                 <h2>Tell Us Your Idea</h2>
                 <p>Is there a creative and fun way that others can easily join to make a difference? Share those ideas! We would love to hear them.</p>
+            </div>
+            <div id="secondary-content">
+                <p class="button-holder"><a href="sponsor-form.php" class="button">Sponsor a Child</a></p>
+                <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
+                <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
+                <p>&nbsp;</p>
+                <h2>Email:</h2>
+                <p>
+                    <ul>
+                        <li><a href="mailto:Info@visionforvulnerablecommunities.org">Info@visionforvulnerablecommunities.org</a></li>
+                        <li><a href="mailto:syrillkizza@gmail.com">syrillkizza@gmail.com</a></li>
+                        <li><a href="mailto:vivcomfoundation@gmail.com">vivcomfoundation@gmail.com</a></li>
+                    </ul>
+                </p>
+               <h2>Our Social Links:</h2>
+                <p>
+                    <a href="https://www.facebook.com/Vision-For-Vulnerable-Communities-Foundation-VIVCOM-Foundation-861875257238221" target="facebook"><img class="social-icon" src="images/icons/png32/facebook.png" /></a>
+                    <a href="https://twitter.com/vivcomfoundat1" target="twitter"><img class="social-icon" src="images/icons/png32/twitter.png" /></a>
+                    <a href="https://www.youtube.com/channel/UCZvovuMv0XCa9HqysxEtEAw" target="youtube"><img class="social-icon" src="images/icons/png32/youtube.png" /></a>
+                    <a href="https://www.instagram.com/vivcom_foundation/" target="instagram"><img class="social-icon" src="images/icons/png32/instagram.png" /></a>
+<!--                    <a href="???" target="google"><img class="social-icon" src="images/icons/png32/google.png" /></a>       -->
+                    <a href="mailto:vivcomfoundation@gmail.com"><img class="social-icon" src="images/icons/png32/email.png" /></a>
+                </p>
+                <h2>Address:</h2>
+                <p><strong>Vision For Vulnerable Communities Foundation</strong><br/>
+                    P.O BOX 72449<br/> Nabweru<br/> Wakiso<br/> (Uganda)</p>
+                <h2>Telephone:</h2>
+                <p>Tel: +256705152084<br/>Mob: +256775152084 / +256771874642</p>
             </div>
 <?php
     include 'includes/footer.php';

@@ -68,6 +68,7 @@
                 <p>You can directly help vulnerable children with your support and care by <a href="fundraising-volunteer.php">volunteering</a> with us. By volunteering you will be helping these children access essential needs such as education, shelter, clothes, food and medical care.</p>
                 <p>You will also be helping provide counseling and recreational activities for vulnerable children as well as providing home and school visits for HIV-positive individuals and other vulnerable households.</p>
                 <p>If you can't volunteer but would would prefer to help in another way please consider <a href="donate.php">donating</a> or <a href="sponsor-form.php">sponsoring a child.</a></p>
+                <p>We also have lots of other ideas for how you can raise money to help <a href="how-you-can-help.php">here</a>.</p>
                 <div class="featured-section">
                     <div class="feature"><img src="images/home/home12c.jpg" alt=""></div>  
                 </div>
@@ -82,6 +83,7 @@
                 <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
                 <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
                 <p>&nbsp;</p>
+                <p>We also have lots of other ideas for how you can raise money to help <a href="how-you-can-help.php">here</a>.</p>
                 <h2>Email:</h2>
                 <p>
                     <ul>
