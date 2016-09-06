@@ -130,6 +130,7 @@ nav {
 nav ul {
 	width: 100%;
 	display: none;
+	margin: 0;
 }
 
 nav li {
@@ -140,6 +141,8 @@ nav li {
 	text-align: center;
 	line-height: 60px;
 	border-bottom: $highlightBorder;
+	list-style-type: none;
+	margin: 0;
 }
 
 nav li:first-of-type {
@@ -286,8 +289,6 @@ img.chart {
 
 
 
-
-
 .button-holder {
 	text-align: center;
 	margin-top: 50px;
@@ -396,7 +397,8 @@ img.chart {
 		text-align: left;
 		line-height: 70px;
 		border: none;
-		margin-left: $leftGutter;
+		margin-left: $leftGutter - 5;
+		list-style-type: none;
 	}
 	.sub-menu li{
 		display: block;
@@ -405,6 +407,7 @@ img.chart {
 		border-bottom: $highlightBorder;
 		padding: 0 $leftGutter 0 $leftGutter;
 		margin: 0;
+		list-style-type: none;
 	}
 	.sub-menu ul{
 		display: none;
@@ -435,6 +438,9 @@ img.chart {
 }
 
 @media screen and (min-width: 1200px){	
+	nav li {
+		margin-left: $leftGutter;
+	}
 	table.chart {
 		width: 47%;
 		margin: 0;

@@ -9,7 +9,12 @@
 ?>
         <script>
             var photoArray = [
-                {src: 'images/program-chart.png',w: 1398,h: 1048}
+                {src: 'images/program-chart.png',w: 1398,h: 1048},
+                {src: 'images/charts/chart-2012.png',w: 1398,h: 1048},
+                {src: 'images/charts/chart-2013.png',w: 1398,h: 1048},
+                {src: 'images/charts/chart-2014.png',w: 1398,h: 1048},
+                {src: 'images/charts/chart-2015.png',w: 1398,h: 1048},
+                {src: 'images/charts/chart-2016.png',w: 1398,h: 1048}
             ];
         </script>
     </head>
@@ -118,11 +123,11 @@
                         <td>20</td>
                     </tr>
                 </table>
-                <img class="chart" src="images/charts/chart-2012.png">
-                <img class="chart" src="images/charts/chart-2013.png">
-                <img class="chart" src="images/charts/chart-2014.png">
-                <img class="chart" src="images/charts/chart-2015.png">
-                <img class="chart" src="images/charts/chart-2016.png">
+                <a href="javascript:openPhotoSwipe(1);"><img class="chart" src="images/charts/chart-2012.png"></a>
+                <a href="javascript:openPhotoSwipe(2);"><img class="chart" src="images/charts/chart-2013.png"></a>
+                <a href="javascript:openPhotoSwipe(3);"><img class="chart" src="images/charts/chart-2014.png"></a>
+                <a href="javascript:openPhotoSwipe(4);"><img class="chart" src="images/charts/chart-2015.png"></a>
+                <a href="javascript:openPhotoSwipe(5);"><img class="chart" src="images/charts/chart-2016.png"></a>
             </div>
 <?php
     include 'includes/footer.php';

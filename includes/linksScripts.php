@@ -17,13 +17,22 @@
                 $(function(){
                     $(".about-link").click(function(){
                         $("#programMenu").hide();
+                        $("#helpMenu").hide();
                         $("#aboutMenu").slideToggle();
                     });
                 });
                 $(function(){
                     $(".program-link").click(function(){
                         $("#aboutMenu").hide();
+                        $("#helpMenu").hide();
                         $("#programMenu").slideToggle();
+                    });
+                });
+                $(function(){
+                    $(".help-link").click(function(){
+                        $("#programMenu").hide();
+                        $("#aboutMenu").hide();
+                        $("#helpMenu").slideToggle();
                     });
                 });
             });

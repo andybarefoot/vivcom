@@ -88,7 +88,8 @@ nav {
 
 nav ul {
   width: 100%;
-  display: none; }
+  display: none;
+  margin: 0; }
 
 nav li {
   background: #ffffff;
@@ -97,7 +98,9 @@ nav li {
   font-weight: 700;
   text-align: center;
   line-height: 60px;
-  border-bottom: 1px solid #1fb3a9; }
+  border-bottom: 1px solid #1fb3a9;
+  list-style-type: none;
+  margin: 0; }
 
 nav li:first-of-type {
   border-top: 1px solid #1fb3a9; }
@@ -306,7 +309,8 @@ img.chart {
     text-align: left;
     line-height: 70px;
     border: none;
-    margin-left: 15px; }
+    margin-left: 10px;
+    list-style-type: none; }
 
   .sub-menu li {
     display: block;
@@ -314,7 +318,8 @@ img.chart {
     text-align: center;
     border-bottom: 1px solid #1fb3a9;
     padding: 0 15px 0 15px;
-    margin: 0; }
+    margin: 0;
+    list-style-type: none; }
 
   .sub-menu ul {
     display: none;
@@ -339,6 +344,9 @@ img.chart {
     float: left;
     border: 1px solid #1fb3a9; } }
 @media screen and (min-width: 1200px) {
+  nav li {
+    margin-left: 15px; }
+
   table.chart {
     width: 47%;
     margin: 0;

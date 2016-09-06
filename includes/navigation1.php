@@ -5,6 +5,7 @@
                 </a>
                 <img id="menu-icon" src="../images/menu.png">
                 <ul id="menu">
+                    <li><a href="../">Home</a></li>
                     <li><a href="#" class="about-link">About Us</a></li>
                     <li class="sub-menu"><ul id="aboutMenu">
                         <li><a href="../team/about-us.php">Who we are</a></li>
@@ -28,9 +29,18 @@
                         <li><a href="../programs/efr.php">Economic and Fundraisng (EFR) Program</a></li>
                         <li><a href="../programs/business.php">Business Development</a></li>
                     </ul></li>
-                    <li><a href="../sponsor-a-child.php">Sponsor a Child</a></li>
+                    <li><a href="#" class="help-link">How To Help</a></li>
+                    <li class="sub-menu"><ul id="helpMenu">
+                        <li><a href="../sponsor-a-child.php">Sponsor a Child</a></li>
+                        <li><a href="../fundraising-volunteer.php">Volunteer</a></li>
+                        <li><a href="../donate.php">Donate</a></li>
+                        <li><a href="../slum-tour.php">Slum Tour</a></li>
+                        <li><a href="../how-you-can-help.php">Other ideas</a></li>
+                    </ul></li>
                     <li><a href="../donate.php" class="button">Donate</a></li>
                     <li><a href="../contact-us.php">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
+
+
