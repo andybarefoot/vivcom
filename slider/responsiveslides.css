@@ -36,7 +36,7 @@
   }
 
 @media screen and (min-width: 600px){ 
-  .rslides {
+  .rslides img{
     padding: 0 15px 0 15px;
   }
 }

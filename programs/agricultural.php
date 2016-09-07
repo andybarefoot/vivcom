@@ -5,31 +5,10 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include '../includes/linksScripts1.php';
-    include '../includes/galleryScripts1.php';
     include '../includes/layout1.php';
+    include '../includes/slider1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
-        <script>
-            var photoArray = [
-                {src: '../images/programs/agriculture01.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture02.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture03.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture04.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture05.jpg',w: 960,h: 540},
-                {src: '../images/programs/agriculture06.jpg',w: 1280,h: 960},
-                {src: '../images/programs/agriculture07.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture08.jpg',w: 960,h: 720},
-                {src: '../images/programs/agriculture09.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture10.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture11.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture12.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture13.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture14.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/agriculture15.jpg',w: 1448,h: 972},
-                {src: '../images/programs/agriculture16.jpg',w: 1500,h: 996},
-                {src: '../images/programs/agriculture17.jpg',w: 1500,h: 1125}
-            ];
-        </script>
     </head>
     <body>
 <?php
@@ -39,9 +18,25 @@
             <div id="primary-content">
                 <h1>Agricultural Project/Granary/Food Basket</h1>
                 <h2>Farming</h2>
-<?php
-    include '../includes/gallery1.php';
-?>
+                <ul class="rslides">
+                  <li><img src="../images/programs/agriculture01.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture02.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture03.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture04.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture05.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture06.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture07.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture08.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture09.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture10.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture11.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture12.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture13.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture14.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture15.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture16.jpg" alt=""></li>
+                  <li><img src="../images/programs/agriculture17.jpg" alt=""></li>
+                </ul>
                 <p>VIVCOM Foundation stretches out into agriculture and the vision homes work towards contributing to the food security of the entire homestead, this begins when the Vision homestead identifies a project that seems tenable to support the entire stead granary/ food basket, each vision home is required to do some rearing so as to improve on the family income as well as supplement the home diet. During the holiday (School break) Vision children have a program of visiting the agricultural projects of their homesteads so that they get involved in the work going on as well as learn hands on.</p>
                 <h2>Feeding program</h2>
                 <p>VIVCOM concedes that most of the vulnerable households thrive on one or no meal a day and this has negatively affected families forcing children into dubious acts such as child labor, petty commercial sex and school drop outs to fend for their families, VIVCOM therefore asserts with the VIVCOM feeding program which is composed of food commodities both donated and those generated from the VIVCOM agricultural projects as well as projects initiated by the Vision homesteads such a vice can be toppled.</p>
@@ -66,8 +61,5 @@
     include '../includes/footer1.php';
 ?>
         </div>
-<?php
-    include '../includes/galleryOverlay1.php';
-?>
     </body>
 </html>

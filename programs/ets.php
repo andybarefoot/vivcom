@@ -5,25 +5,10 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />        
 <?php
     include '../includes/linksScripts1.php';
-    include '../includes/galleryScripts1.php';
     include '../includes/layout1.php';
+    include '../includes/slider1.php';
 ?>
         <link rel="stylesheet" type="text/css" href="../css/layout01.css">
-        <script>
-            var photoArray = [
-                {src: '../images/programs/ets01.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets02.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets03.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets04.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets05.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets06.jpg',w: 1288,h: 966},
-                {src: '../images/programs/ets07.jpg',w: 1500,h: 1125},
-                {src: '../images/programs/ets08.jpg',w: 960,h: 540},
-                {src: '../images/programs/ets09.jpg',w: 960,h: 720},
-                {src: '../images/programs/ets10.jpg',w: 360,h: 480},
-                {src: '../images/programs/ets11.jpg',w: 660,h: 371}
-            ];
-        </script>
     </head>
     <body>
 <?php
@@ -32,9 +17,19 @@
         <div id="main-body">
             <div id="primary-content">
                 <h1>Education and Training Support (ETS) Program</h1>
-<?php
-    include '../includes/gallery1.php';
-?>
+                <ul class="rslides">
+                  <li><img src="../images/programs/ets01.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets02.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets03.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets04.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets05.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets06.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets07.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets08.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets09.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets10.jpg" alt=""></li>
+                  <li><img src="../images/programs/ets11.jpg" alt=""></li>
+                </ul>
                 <p>Education prepares people for life by developing their character and career. We ensure all school age going children attend the project school situated in Nabweru south, however technical and vocational training will be given to older children.</p>
                 <p>Vision For Vulnerable Communities Foundation offers a vision Homestead Scholarship (VHS) to pupils who excel in our school, this scholarship program is managed from contributions made from each vision home accruing from the saving raised from the income generating activities from each vision home. This in doing ensures that vision parents and guardians are part and parcel to the child's education, parents & guardians encourage children to read hard to get the award, positive competitiveness amongst vision families' and so to motivate school age going children belonging to our project.</p>
             </div>
@@ -57,8 +52,5 @@
     include '../includes/footer1.php';
 ?>
         </div>
-<?php
-    include '../includes/galleryOverlay1.php';
-?>
     </body>
 </html>
