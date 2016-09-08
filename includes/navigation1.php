@@ -6,15 +6,16 @@
                 <img id="menu-icon" src="../images/menu.png">
                 <ul id="menu">
                     <li><a href="../">Home</a></li>
-                    <li><a href="#" class="about-link">About Us</a></li>
-                   <li class="about-link"><a href="#">About Us</a><ul id="aboutMenu" class="sub-menu">
+                    <li class="about-link"><a href="#">About Us</a>
+                        <ul id="aboutMenu" class="sub-menu">
                             <li><a href="../team/about-us.php">Who we are</a></li>
                             <li><a href="../team/syrill-kizza.php">Syrill Kizza</a></li>
                             <li><a href="../team/brenda-econia.php">Brenda Econia</a></li>
                             <li><a href="../team/abraham-olupot.php">Abraham Olupot</a></li>
                             <li><a href="../team/kisinde-arthur.php">Kisinde Rogers Arthur</a></li>
                             <li><a href="../team/lukanga-godfrey.php">Lukanga Musoke Godfrey</a></li>
-                        </ul></li>
+                        </ul>
+                    </li>
                     <li class="program-link"><a href="#">Programs</a>
                         <ul id="programMenu" class="sub-menu">
                             <li><a href="../programs.php">Program Overview</a></li>
