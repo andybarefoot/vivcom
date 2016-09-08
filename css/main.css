@@ -63,6 +63,11 @@ input[type=text] {
   border-radius: 2px;
   width: 200px; }
 
+select {
+  border: 1px solid #1fb3a9;
+  border-radius: 2px;
+  width: 200px; }
+
 textarea {
   margin-top: 5px;
   border: 1px solid #1fb3a9;

@@ -132,7 +132,7 @@ $message .= "Gender: ".$gender."\n";
                         <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                 </table>
-                <h2>Mobile Banking</h2>
+                <h2>Mobile Money Banking</h2>
                 <p>Please choose a sponsorship amount from the table above, our mobile banking numbers are:</p>
                 <p>M.T.N: +256775152084</p>
                 <p>AIRTEL: +256705152084</p>

@@ -97,6 +97,12 @@ input[type=text] {
     width: 200px;
 }
 
+select {
+    border: $highlightBorder;
+    border-radius: 2px;
+    width: 200px;
+}
+
 textarea {
 	margin-top: 5px;
     border: $highlightBorder;
