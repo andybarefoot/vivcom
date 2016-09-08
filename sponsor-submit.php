@@ -18,7 +18,42 @@ $acknowledgement = $_POST["acknowledgement"];
 $dataClean = true;
 $errorStr= "";
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+if (strlen($title) == 0) {
+    $errorStr.=" - The &quot;Title&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($firstName) == 0) {
+    $errorStr.=" - The &quot;First Name&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($lastName) == 0) {
+    $errorStr.=" - The &quot;Last Name&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($address) == 0) {
+    $errorStr.=" - The &quot;Address&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($city) == 0) {
+    $errorStr.=" - The &quot;City&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($state) == 0) {
+    $errorStr.=" - The &quot;State&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($postalCode) == 0) {
+    $errorStr.=" - The &quot;Postal Code&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($tel) == 0) {
+    $errorStr.=" - The &quot;Tel&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}
+if (strlen($email) == 0) {
+    $errorStr.=" - The &quot;Email&quot; field can not be left blank.<br/>";
+    $dataClean = false;
+}else if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
     $errorStr.=" - ".$email ." is not a valid email address.<br/>";
     $dataClean = false;
 }
@@ -62,14 +97,47 @@ $message .= "Gender: ".$gender."\n";
 ?>
         <div id="main-body">
             <div id="primary-content">
-               <h1>Sponsor a Child: Application Form</h1>
  <?
     if($dataClean){
         mail($to,$subject,$message);
 ?>
+                <h1>Sponsor a Child: Payment</h1>
+                <h2>Thank You!</h2>
                 <p>Thank you for agreeing to sponsor a child.</p>
-                <p>Once we have confirmed a payment of $300 we will send more details of the child you have sponsored.</p>
-                <h2>Bank Details:</h2>
+                <p>Please choose one of the payment methods below.</p>
+                <h2>Credit Card/PayPal</h2>
+                <table>
+                    <tr>
+                        <td>$300 US: Primary sponsorship 1 term</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>$900 US: Primary sponsorship 1 year</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>$500 US: Secondary sponsorship 1 term</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>$1500 US: Secondary sponsorship 1 year</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>$500 US: University Education 1 semester</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>$1500 US: University Education 1 year</td>
+                        <td><a href="#" class="button">Pay Now</a></td>
+                    </tr>
+                </table>
+                <h2>Mobile Banking</h2>
+                <p>Please choose a sponsorship amount from the table above, our mobile banking numbers are:</p>
+                <p>M.T.N: +256775152084</p>
+                <p>AIRTEL: +256705152084</p>
+                <h2>Bank Transfer:</h2>
+                <p>Please choose a sponsorship amount from the table above, our bank details are:</p>
                 <table>
                     <tr>
                         <td>BANK NAME:</td>
@@ -95,11 +163,14 @@ $message .= "Gender: ".$gender."\n";
                         <td>SWIFT CODE:</td>
                         <td>AFRIUGKA</td>
                     </tr>
-                <table>
- <?
+                </table>
+                <p>Once we have confirmed your payment we will send more details of the child you have sponsored.</p>
+<?
     }else{
+            print "<h1>Sponsor a Child: Form Errors</h1>";
             print "<p>There were some issues with your details. Please <a href='javascript:history.go(-1)'>go back</a> and correct the following issues:</p>";
             print "<p>".$errorStr."</p>";
+            print "<p class=\"button-holder\"><a href=\"javascript:history.go(-1);\" class=\"button\">Back to Form</a></p>";
     }
 ?>
              </div>
