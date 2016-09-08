@@ -4,6 +4,9 @@
 #secondary-content {
   width: 100%; }
 
+#tertiary-content {
+  width: 100%; }
+
 @media screen and (min-width: 900px) {
   #primary-content {
     width: 65%;
@@ -11,6 +14,10 @@
 
   #secondary-content {
     width: 35%;
-    float: right; } }
+    float: right; }
+
+  #tertiary-content {
+    width: 65%;
+    float: left; } }
 
 /*# sourceMappingURL=layout01.css.map */

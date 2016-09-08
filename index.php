@@ -80,7 +80,7 @@
             <div id="secondary-content">
                <h2>How You Can Help:</h2>
                 <p class="button-holder"><a href="sponsor-a-child.php" class="button">Sponsor a Child</a></p>
-                <p class="button-holder"><a href="volunteer-form.php" class="button">Volunteer Now</a></p>
+                <p class="button-holder"><a href="fundraising-volunteer.php" class="button">Volunteer Now</a></p>
                 <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
                 <p class="button-holder"><a href="slum-tour.php" class="button">Slum Tour</a></p>
                 <p>&nbsp;</p>

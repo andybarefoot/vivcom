@@ -31,7 +31,14 @@
             <div id="first-content">
                 <form id="donate" action="donate-submit.php" onsubmit="return validateForm()" method="POST">
                 <h1>Donate</h1>
-                <p>You can donate to us with any of the following methods:</p>
+                <p>Donations are accepted:</p>
+                <ul>
+                    <li>By Cash</li>
+                    <li>By Cheque</li>
+                    <li>By Direct Debit</li>
+                    <li>By Standing Order</li>
+                </ul>
+                <p>You can donate to us with any of the following Methods.</p>
                 <h2>Credit Card/PayPal</h2>
                 <p><a href="#" class="button">Donate Now</a></p>
                 <h2>Mobile Money Banking</h2>

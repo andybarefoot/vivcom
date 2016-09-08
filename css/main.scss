@@ -202,6 +202,11 @@ li{
 	background-color: $secondaryColour;
 }
 
+#secondary-content td{
+	background-color: $secondaryColour;
+}
+
+
 #footer{
 	width: 100%;
 	height: $footerHeight;
@@ -338,7 +343,15 @@ img.chart {
 	margin-bottom: 5px;
 }
 
-
+.shop-gallery {
+	background-color: $highlightColour;
+}
+.shop {
+	width: 47%;
+	margin-left: 2%; 
+	margin-top: 7px; 
+	float: left;
+}
 
 @media screen and (min-width: 600px){	
 	.text-photo {
@@ -383,6 +396,12 @@ img.chart {
 	}
 	#legal2 {
 		display: none;
+	}
+	.shop {
+		width: 32%;
+		margin-left: 1%; 
+		margin-top: 6px; 
+		float: left;
 	}
 }
 
@@ -439,6 +458,16 @@ img.chart {
 		margin: 5px $leftGutter 5px $leftGutter;
 		float: left;
 		border: 1px solid #1fb3a9;
+	}
+	.shop-gallery {
+		background-color: $mainBGcolour;
+	}
+	.shop {
+		width: 32%;
+		margin-left: 1%; 
+		margin-top: 6px; 
+		float: left;
+		border: $highlightBorder;
 	}
 
 }

@@ -4,6 +4,9 @@
 #secondary-content{
 	width:100%;
 }
+#tertiary-content{
+	width:100%;
+}
 
 
 @media screen and (min-width: 600px){	
@@ -17,6 +20,10 @@
 	#secondary-content{
 		width:35%;
 		float:right;
+	}
+	#tertiary-content{
+		width:65%;
+		float:left;
 	}
 }
 

@@ -37,6 +37,7 @@
                             <li><a href="../sponsor-a-child.php">Sponsor a Child</a></li>
                             <li><a href="../fundraising-volunteer.php">Volunteer</a></li>
                             <li><a href="../donate.php">Donate</a></li>
+                            <li><a href="../shop.php">Shop</a></li>
                             <li><a href="../slum-tour.php">Slum Tour</a></li>
                             <li><a href="../how-you-can-help.php">Other ideas</a></li>
                         </ul>
