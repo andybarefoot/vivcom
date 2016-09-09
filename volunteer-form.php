@@ -21,6 +21,7 @@
                 <form id="volunteer" action="volunteer-submit.php" method="POST">
                 <h1>Online Application Form</h1>
                 <p>Thank you for your interest in volunteering with Vision For Vulnerable Communities Foundation. The information you provide in this Application form will help us to decide how you might be useful to help us. It is really helpful if you can you can give us as much information as possible about your experiences, interests and availability to volunteer. If you have any questions about this form, please do not hesitate to contact us for more details.</p>
+
                 <h2>Part 1 - The volunteer role you are applying for</h2>
                 <p> 
                     <label for="role">Role Title:</label>
@@ -32,6 +33,7 @@
                     <label for="location">Location:</label>
                     <input type="text" name="location" id="location"><br/>
                 </p>
+
                 <h2>Part 2 - Personal Information</h2>
                 <p>
                     <label for="firstName">First name:</label>
@@ -74,8 +76,7 @@
                     <input type="text" name="natIdNo" id="natIdNo">
                 </p>
                 
-                <h2>Part 3 - How did you hear about our organization</h2>
-                
+                <h2>Part 3 - How did you hear about our organization</h2>                
                 <p><input type="radio" name="hearAbout" value="mouth">Word of Mouth<br>
                 <input type="radio" name="hearAbout" value="school">School, college, university<br>
                 <input type="radio" name="hearAbout" value="event">Event<br>
@@ -85,8 +86,7 @@
                 <input type="radio" name="hearAbout" value="volunteer">Volunteer Centre<br>
                 <input type="radio" name="hearAbout" value="Other">Other, please give details <input type="text" name="other" id="other"></p>
 
-                <h2>Part 4 - Your interests and reasons for applying to volunteer</h2>
-                
+                <h2>Part 4 - Your interests and reasons for applying to volunteer</h2>                
                 <p>
                     What do you hope to gain from volunteering with us?<br/>
                     <textarea name="gain" id="gain"></textarea><br/>
@@ -95,14 +95,12 @@
                 </p>
 
                 <h2>Part 5 - Your availability</h2>
-
                 <p>
                     What days and times would best suit you and how often would you be able to volunteer?<br/>
                     <textarea name="availability" id="availability"></textarea>
                 </p>
 
                 <h2>Part 6 - Your skills and experience</h2>
-
                 <p>
                     Please tell us about any paid/voluntary work Experience you have which may be relevant to this role.<br/>
                     <textarea name="experience" id="experience"></textarea><br/>
@@ -127,11 +125,9 @@
                     <textarea name="otherSkills" id="otherSkills"></textarea>
                 </p>
 
-                <h2>Part 7 - References</h2>
-                
+                <h2>Part 7 - References</h2>             
                 <p>Please provide details of two people, who have at least known you for two years that we can ask for references regarding your work/ studies/ experience and your suitability to volunteer with us. Wherever possible, these should be current/ past employers, places you have volunteered or a teacher/ tutor/ social worker.</p>
-
-                <p><strong>Reference 1:</strong></p>
+                <h2>Reference 1:</h2>
                 <p>
                     <label for="ref1title">Title: Mr/Mrs/Ms/Miss</label>
                     <input type="text" name="ref1title" id="ref1title"><br/>
@@ -161,16 +157,17 @@
                     <input type="text" name="ref1email" id="ref1email"><br/>
                     
                     <label for="ref1occupation">Occupation:</label>
-                    <input type="text" name="ref1occupation" id="ref1occupation"><br/>
-                    
-                    How do you this person?<br/>
+                    <input type="text" name="ref1occupation" id="ref1occupation">
+                </p>
+                <p>    
+                    How do you know this person?<br/>
                     <textarea name="ref1knowPerson" id="ref1knowPerson"></textarea><br/>
 
                     When did you last have contact with this person?<br/>
                     <textarea name="ref1lastContact" id="ref1lastContact"></textarea>
                 </p>
                 
-                <p><strong>Reference 2:</strong></p>
+                <h2>Reference 2:</h2>
                 <p>
                     <label for="ref2title">Title: Mr/Mrs/Ms/Miss</label>
                     <input type="text" name="ref2title" id="ref2title"><br/>
@@ -200,9 +197,10 @@
                     <input type="text" name="ref2email" id="ref2email"><br/>
                     
                     <label for="ref2occupation">Occupation:</label>
-                    <input type="text" name="ref2occupation" id="ref2occupation"><br/>
-                    
-                    How do you this person?<br/>
+                    <input type="text" name="ref2occupation" id="ref2occupation">
+                </p>
+                <p>    
+                    How do you know this person?<br/>
                     <textarea name="ref2knowPerson" id="ref2knowPerson"></textarea><br/>
 
                     When did you last have contact with this person?<br/>
@@ -212,8 +210,8 @@
                 <h2>Part 8 - Support and Health needs</h2>
                 <p>Do you have any disabilities, health needs or extra support needs that we should be aware of when you organizing your volunteering?<br/>
                 <input type="radio" id="disabilities" title="disabilities" value="yes" /> Yes 
-                <input type="radio" id="disabilities" title="disabilities" value="no" /> No <br/>
-                If yes, please give details to help us to plan your volunteering:<br/>
+                <input type="radio" id="disabilities" title="disabilities" value="no" /> No</p>
+                <p>If yes, please give details to help us to plan your volunteering:<br/>
                 <textarea name="disabilityDetails" id="disabilityDetails"></textarea>
                 </p>
                 
@@ -238,14 +236,17 @@
 
                 <h2>Part 10 - Declaration of Criminal Records and Disqualifications</h2>
                 <p>As a community charity, we have a duty to protect the children, young people and families whom we work with. The volunteer roe you have applied for will impact on what information you are required to disclose under the rehabilitation of offenders act 1974 and / or the child care act 2006. For the volunteer role you have applied for, please declare any criminal convictions as follows:</p>
-                <p>Volunteer roles that do not involve working with children or vulnerable-please complete p</p>
+                <p>Volunteer roles that do not involve working with children or vulnerable-please complete part 10 A</p>
+                <p>Volunteer roles working with children and vulnerable adults-please complete part 10 B</p>
+
                 <h2>Part 10 A - Volunteer roles that do not involve contact with children or vulnerable/ protected adults</h2>
-                <p>Have you ever been convicted of a criminal offence? (You do not need to disclose convictions deemed as ‘spent’ under rehabilitation of offender’s legislation)<br/>
+                <p>Have you ever been convicted of a criminal offence? (You do not need to disclose convictions deemed as 'spent' under rehabilitation of offender's legislation)<br/>
                 <input type="radio" id="convictedA" title="convictedA" value="yes" /> Yes 
                 <input type="radio" id="convictedA" title="convictedA" value="no" /> No </p>
                 <p>If Yes, please give details of all offences, sentences, and dates on separate sheet of paper, in a sealed envelope, marked confidential, for the attention of the volunteer co-coordinator</p>
+
                 <h2>Part 10 B- Volunteer roles working with children or vulnerable protected adults</h2>
-                <p>Have you ever been convicted been convicted of a criminal offence or cautioned, reprimanded or given a final warning by police (‘spent’ or ‘unspent’)? (Please read the criminal information guidance on which information to disclose before answering this question.<br/>
+                <p>Have you ever been convicted been convicted of a criminal offence or cautioned, reprimanded or given a final warning by police ('spent' or 'unspent')? (Please read the criminal information guidance on which information to disclose before answering this question.<br/>
                 <input type="radio" id="convictedB" title="convictedB" value="yes" /> Yes 
                 <input type="radio" id="convictedB" title="convictedB" value="no" /> No </p>
                 <p>Are you disqualified from working with vulnerable children / protected adults?</br>
@@ -256,11 +257,54 @@
                 <input type="radio" id="enquiriesB" title="enquiriesB" value="no" /> No </p>
                 <p>If Yes, please give details of all offences, penalties, and or police enquiries and dates on a separate sheet of paper, in a sealed envelope, marked confidential, for the volunteer coordinator.</p>
                 <p><input type="checkbox" name="acknowledgementChecks" value="acknowledgementChecks"> I understand that the relevant checks for the role I am applying for will be sought.</p>
+
                 <h2>Part 11 - Data Protection</h2>
                 <p>We value your support and promise to respect your privacy. The data we gather and hold is managed in accordance with the Data protection Act 1998. We will not disclose or share personal information supplied by you with any third party organization without your consent. We would like to keep you informed about the vital work we do and of volunteering opportunities that may be of interest to you, however if you do not wish to receive this information, please let us know by ticking this box: <input type="checkbox" name="Protection" value="Protection"></p>
+
                 <h2>Part 12 - For parents/ Guardians of volunteers under 16 only</h2>
                 <p>I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
                 <p>I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
+                <p>
+                    <label for="guardianRelationshipName">Relationship to prospective volunteer:</label>
+                    <input type="text" name="guardianRelationshipName" id="guardianRelationshipName"><br/>
+                </p>
+
+                <h2>Part 13- Declaration</h2>
+                <p>I understand and agree that data contained in this application in this application form will be used for volunteer recruitment purposes and will be held on a computer database. I also agree Vision For Vulnerable Communities Foundation holding this form in paper format in a secure area.</p>
+                <p>I confirm that the information I have given is correct and complete and that any false statements or omissions my results in my services to be terminated.</p>
+                <p>Are you aged under 16?</p> Yes or No
+                If you answered Yes, please ensure that part 12 is completed.
+                <h2>Part 14-Confidential (equal opportunities monitoring)</h2>
+                <p>How would you describe your religion or belief?<br/>
+                    <input type="radio" name="religion" value="bornAgain"> Born again Christian<br/>
+                    <input type="radio" name="religion" value="muslim"> Muslim<br/>
+                    <input type="radio" name="religion" value="catholic"> Catholic<br/>
+                    <input type="radio" name="religion" value="protestant"> Protestant<br/>
+                    <input type="radio" name="religion" value="buddhist"> Buddhist<br/>
+                    <input type="radio" name="religion" value="hindu"> Hindu<br/>
+                    <input type="radio" name="religion" value="sikh"> Sikh<br/>
+                    <input type="radio" name="religion" value="jewish"> Jewish<br/>
+                    <input type="radio" name="religion" value="other"> Any other religion<br/>
+                    <input type="radio" name="religion" value="none"> None<br/>
+                    <input type="radio" name="religion" value="preferNotToSay"> Prefer not to say<br/>
+                </p>
+                <p>Do you have any disability?<br/>
+                <input type="radio" id="disability" title="disability" value="yes" /> Yes 
+                <input type="radio" id="disability" title="disability" value="no" /> No <br/>
+                How would you describe your cultural or ethnic origin?<br/>
+                <textarea name="culture" id="culture"></textarea></p>
+
+
+                <p>How would you describe your sexual orientation?<br/>
+                    <input type="radio" name="sexualOrientation" value="bisexual"> Bisexual<br/>
+                    <input type="radio" name="sexualOrientation" value="heterosexual"> Heterosexual / Straight<br/>
+                    <input type="radio" name="sexualOrientation" value="gay"> Gay Man<br/>
+                    <input type="radio" name="sexualOrientation" value="lesbian"> Gay woman/ Lesbian<br/>
+                    <input type="radio" name="sexualOrientation" value="prefernottosay"> Prefer not to say<br/>
+                    <input type="radio" name="sexualOrientation" value="other"> Other<br/>
+                </p>
+                <p>Many thanks for taking the time to complete this form. </p>
+                <p>For any queries regarding your application to become a volunteer, please send us an email.</p>
                 <p class="button-holder"><a href="javascript:submitForm();" class="button">Submit Form</a></p>
                 </form>
             </div>
