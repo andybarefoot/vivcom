@@ -40,7 +40,7 @@
                 </ul>
                 <p>You can donate to us with any of the following Methods.</p>
                 <h2>Credit Card/PayPal</h2>
-                <p><a href="#" class="button">Donate Now</a></p>
+                <p>Make a payment via <a href="https://www.paypal.com/">PayPal</a> to our email address: vivcomfoundation@gmail.com</p>
                 <h2>Mobile Money Banking</h2>
                 <p>M.T.N: +256775152084</p>
                 <p>AIRTEL: +256705152084</p>

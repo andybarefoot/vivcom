@@ -103,41 +103,34 @@ $message .= "Gender: ".$gender."\n";
 ?>
                 <h1>Sponsor a Child: Payment</h1>
                 <h2>Thank You!</h2>
-                <p>Thank you for agreeing to sponsor a child.</p>
-                <p>Please choose one of the payment methods below.</p>
-                <h2>Credit Card/PayPal</h2>
+                <p>Thank you for agreeing to sponsor a child. The cost for sponsoring a child is as follows:</p>
                 <table>
                     <tr>
                         <td>$300 US: Primary sponsorship 1 term</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                     <tr>
                         <td>$900 US: Primary sponsorship 1 year</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                     <tr>
                         <td>$500 US: Secondary sponsorship 1 term</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                     <tr>
                         <td>$1500 US: Secondary sponsorship 1 year</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                     <tr>
                         <td>$500 US: University Education 1 semester</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                     <tr>
                         <td>$1500 US: University Education 1 year</td>
-                        <td><a href="#" class="button">Pay Now</a></td>
                     </tr>
                 </table>
+                <p>Please choose a sposnorship and make your donation using one of the payment methods below.</p>
+                <h2>Credit Card/PayPal</h2>
+                <p>Make a payment via <a href="https://www.paypal.com/">PayPal</a> to our email address: vivcomfoundation@gmail.com</p>
                 <h2>Mobile Money Banking</h2>
-                <p>Please choose a sponsorship amount from the table above, our mobile banking numbers are:</p>
                 <p>M.T.N: +256775152084</p>
                 <p>AIRTEL: +256705152084</p>
                 <h2>Bank Transfer:</h2>
-                <p>Please choose a sponsorship amount from the table above, our bank details are:</p>
                 <table>
                     <tr>
                         <td>BANK NAME:</td>

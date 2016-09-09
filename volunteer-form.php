@@ -7,6 +7,34 @@
     include 'includes/linksScripts.php';
 ?>
        <script>
+            function validateForm() {
+                var valid = true;
+                var errorStr = "";
+                if (!document.forms["volunteer"]["declarationCheck1"].checked) {
+                    errorStr += "- You must check the first box in Part 12 to confirm your understanding.\n";
+                    valid = false;
+                }
+                if (!document.forms["volunteer"]["declarationCheck2"].checked) {
+                    errorStr += "- You must check the second box in Part 12 to confirm your application details.\n";
+                    valid = false;
+                }
+                if (!document.forms["volunteer"]["under16no"].checked) {
+                    if (!document.forms["volunteer"]["guardianCheck1"].checked) {
+                        errorStr += "- As you are under 16 a guardian must check the first box in Part 11 to give their permission.\n";
+                        valid = false;
+                    }
+                    if (!document.forms["volunteer"]["guardianCheck2"].checked) {
+                        errorStr += "- As you are under 16 a guardian must check the second box in Part 11 to agree to policies and procedures.\n";
+                        valid = false;
+                    }
+                }
+                if(valid){
+                    return true;
+                }else{
+                    alert(errorStr);
+                    return false;
+                }
+            }
             function submitForm(){
                 $("#volunteer").submit();
             }
@@ -18,7 +46,7 @@
 ?>
         <div id="main-body">
             <div id="primary-content">
-                <form id="volunteer" action="volunteer-submit.php" method="POST">
+                <form id="volunteer" action="volunteer-submit.php" onsubmit="return validateForm()" method="POST">
                 <h1>Online Application Form</h1>
                 <p>Thank you for your interest in volunteering with Vision For Vulnerable Communities Foundation. The information you provide in this Application form will help us to decide how you might be useful to help us. It is really helpful if you can you can give us as much information as possible about your experiences, interests and availability to volunteer. If you have any questions about this form, please do not hesitate to contact us for more details.</p>
 
@@ -114,13 +142,12 @@
                     <textarea name="qualification" id="qualification"></textarea>
                 </p>
                 <p>We sometimes need volunteers with particular skills. Do you have any of the following skills? Tick any of the boxes which apply.<br/>
-                    <input type="checkbox" name="fundraising" value="fundraising"> Fundraising<br/>
-                    <input type="checkbox" name="languages" value="languages"> Languages (other than English)<br/>
-                    <input type="checkbox" name="foodHygiene" value="foodHygiene"> Basic food Hygiene<br/>
-                    <input type="checkbox" name="fundraising" value="fundraising"> Fundraising<br/>
-                    <input type="checkbox" name="firstAid" value="firstAid"> First Aid<br/>
-                    <input type="checkbox" name="signLanguage" value="signLanguage"> Sign Language<br/>
-                    <input type="checkbox" name="drivingLicense" value="drivingLicense"> Driving License (Car)<br/>
+                    <input type="checkbox" name="fundraising" value="Yes"> Fundraising<br/>
+                    <input type="checkbox" name="languages" value="Yes"> Languages (other than English)<br/>
+                    <input type="checkbox" name="foodHygiene" value="Yes"> Basic food Hygiene<br/>
+                    <input type="checkbox" name="firstAid" value="Yes"> First Aid<br/>
+                    <input type="checkbox" name="signLanguage" value="Yes"> Sign Language<br/>
+                    <input type="checkbox" name="drivingLicense" value="Yes"> Driving License (Car)<br/>
                 </p>
                 <p>
                     Please state which languages you speak.<br/>
@@ -214,8 +241,8 @@
                 
                 <h2>Part 8 - Support and Health needs</h2>
                 <p>Do you have any disabilities, health needs or extra support needs that we should be aware of when you organizing your volunteering?<br/>
-                <input type="radio" id="disabilities" title="disabilities" value="yes" /> Yes 
-                <input type="radio" id="disabilities" title="disabilities" value="no" /> No</p>
+                <input type="radio" id="disabilities" name="disabilities" value="yes" /> Yes 
+                <input type="radio" id="disabilities" name="disabilities" value="no" /> No</p>
                 <p>If yes, please give details to help us to plan your volunteering:<br/>
                 <textarea name="disabilityDetails" id="disabilityDetails"></textarea>
                 </p>
@@ -239,49 +266,26 @@
                     <input type="text" name="contactRelated" id="contactRelated">
                 </p>
 
-                <h2>Part 10 - Declaration of Criminal Records and Disqualifications</h2>
-                <p>As a community charity, we have a duty to protect the children, young people and families whom we work with. The volunteer roe you have applied for will impact on what information you are required to disclose under the rehabilitation of offenders act 1974 and / or the child care act 2006. For the volunteer role you have applied for, please declare any criminal convictions as follows:</p>
-                <p>Volunteer roles that do not involve working with children or vulnerable-please complete part 10 A</p>
-                <p>Volunteer roles working with children and vulnerable adults-please complete part 10 B</p>
+                <h2>Part 10 - Data Protection</h2>
+                <p>We value your support and promise to respect your privacy. The data we gather and hold is managed in accordance with the Data protection Act 1998. We will not disclose or share personal information supplied by you with any third party organization without your consent. We would like to keep you informed about the vital work we do and of volunteering opportunities that may be of interest to you, however if you do not wish to receive this information, please let us know by ticking this box: <input type="checkbox" name="Protection" value="Yes"></p>
 
-                <h2>Part 10 A - Volunteer roles that do not involve contact with children or vulnerable/ protected adults</h2>
-                <p>Have you ever been convicted of a criminal offence? (You do not need to disclose convictions deemed as 'spent' under rehabilitation of offender's legislation)<br/>
-                <input type="radio" id="convictedA" title="convictedA" value="yes" /> Yes 
-                <input type="radio" id="convictedA" title="convictedA" value="no" /> No </p>
-                <p>If Yes, please give details of all offences, sentences, and dates on separate sheet of paper, in a sealed envelope, marked confidential, for the attention of the volunteer co-coordinator</p>
-
-                <h2>Part 10 B- Volunteer roles working with children or vulnerable protected adults</h2>
-                <p>Have you ever been convicted been convicted of a criminal offence or cautioned, reprimanded or given a final warning by police ('spent' or 'unspent')? (Please read the criminal information guidance on which information to disclose before answering this question.<br/>
-                <input type="radio" id="convictedB" title="convictedB" value="yes" /> Yes 
-                <input type="radio" id="convictedB" title="convictedB" value="no" /> No </p>
-                <p>Are you disqualified from working with vulnerable children / protected adults?</br>
-                <input type="radio" id="disqualifiedB" title="disqualifiedB" value="yes" /> Yes 
-                <input type="radio" id="disqualifiedB" title="disqualifiedB" value="no" /> No </p>
-                <p>Are you aware of any police enquiries following allegations made against you, which may have a bearing on your suitability for the role?</br>
-                <input type="radio" id="enquiriesB" title="enquiriesB" value="yes" /> Yes 
-                <input type="radio" id="enquiriesB" title="enquiriesB" value="no" /> No </p>
-                <p>If Yes, please give details of all offences, penalties, and or police enquiries and dates on a separate sheet of paper, in a sealed envelope, marked confidential, for the volunteer coordinator.</p>
-                <p><input type="checkbox" name="acknowledgementChecks" value="acknowledgementChecks"> I understand that the relevant checks for the role I am applying for will be sought.</p>
-
-                <h2>Part 11 - Data Protection</h2>
-                <p>We value your support and promise to respect your privacy. The data we gather and hold is managed in accordance with the Data protection Act 1998. We will not disclose or share personal information supplied by you with any third party organization without your consent. We would like to keep you informed about the vital work we do and of volunteering opportunities that may be of interest to you, however if you do not wish to receive this information, please let us know by ticking this box: <input type="checkbox" name="Protection" value="Protection"></p>
-
-                <h2>Part 12 - For parents/ Guardians of volunteers under 16 only</h2>
-                <p><input type="checkbox" name="guardianCheck1" value="guardianCheck1"> I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
-                <p><input type="checkbox" name="guardianCheck2" value="guardianCheck2"> I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
+                <h2>Part 11 - For parents/ Guardians of volunteers under 16 only</h2>
+                <p><input type="checkbox" name="guardianCheck1" value="Yes"> I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
+                <p><input type="checkbox" name="guardianCheck2" value="Yes"> I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
                 <p>
                     <label for="guardianRelationship">Relationship to prospective volunteer:</label>
                     <input type="text" name="guardianRelationship" id="guardianRelationship"><br/>
                 </p>
 
-                <h2>Part 13- Declaration</h2>
-                <p><input type="checkbox" name="declarationCheck1" value="declarationCheck1"> I understand and agree that data contained in this application in this application form will be used for volunteer recruitment purposes and will be held on a computer database. I also agree Vision For Vulnerable Communities Foundation holding this form in paper format in a secure area.</p>
-                <p><input type="checkbox" name="declarationCheck2" value="declarationCheck2"> I confirm that the information I have given is correct and complete and that any false statements or omissions my results in my services to be terminated.</p>
+                <h2>Part 12- Declaration</h2>
+                <p><input type="checkbox" name="declarationCheck1" value="Yes"> I understand and agree that data contained in this application in this application form will be used for volunteer recruitment purposes and will be held on a computer database. I also agree Vision For Vulnerable Communities Foundation holding this form in paper format in a secure area.</p>
+                <p><input type="checkbox" name="declarationCheck2" value="Yes"> I confirm that the information I have given is correct and complete and that any false statements or omissions my results in my services to be terminated.</p>
                 <p>Are you aged under 16?</br>
-                <input type="radio" id="under16" title="under16" value="yes" /> Yes 
-                <input type="radio" id="under16" title="under16" value="no" /> No </p>
-                <p>If you answered Yes, please ensure that part 12 is completed.</p>
-                <h2>Part 14-Confidential (equal opportunities monitoring)</h2>
+                <input type="radio" id="under16yes" name="under16" value="yes" /> Yes 
+                <input type="radio" id="under16no" name="under16" value="no" /> No </p>
+                <p>If you answered Yes, please ensure that part 11 is completed.</p>
+
+                <h2>Part 13 - Confidential (equal opportunities monitoring)</h2>
                 <p>How would you describe your religion or belief?<br/>
                     <input type="radio" name="religion" value="bornAgain"> Born again Christian<br/>
                     <input type="radio" name="religion" value="muslim"> Muslim<br/>
@@ -296,8 +300,8 @@
                     <input type="radio" name="religion" value="preferNotToSay"> Prefer not to say<br/>
                 </p>
                 <p>Do you have any disability?<br/>
-                <input type="radio" id="disability" title="disability" value="yes" /> Yes 
-                <input type="radio" id="disability" title="disability" value="no" /> No </p>
+                <input type="radio" id="disability" name="disability" value="yes" /> Yes 
+                <input type="radio" id="disability" name="disability" value="no" /> No </p>
                 <p>How would you describe your cultural or ethnic origin?<br/>
                 <textarea name="culture" id="culture"></textarea></p>
 
