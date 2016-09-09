@@ -262,18 +262,20 @@
                 <p>We value your support and promise to respect your privacy. The data we gather and hold is managed in accordance with the Data protection Act 1998. We will not disclose or share personal information supplied by you with any third party organization without your consent. We would like to keep you informed about the vital work we do and of volunteering opportunities that may be of interest to you, however if you do not wish to receive this information, please let us know by ticking this box: <input type="checkbox" name="Protection" value="Protection"></p>
 
                 <h2>Part 12 - For parents/ Guardians of volunteers under 16 only</h2>
-                <p>I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
-                <p>I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
+                <p><input type="checkbox" name="guardianCheck1" value="guardianCheck1"> I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
+                <p><input type="checkbox" name="guardianCheck2" value="guardianCheck2"> I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
                 <p>
                     <label for="guardianRelationshipName">Relationship to prospective volunteer:</label>
                     <input type="text" name="guardianRelationshipName" id="guardianRelationshipName"><br/>
                 </p>
 
                 <h2>Part 13- Declaration</h2>
-                <p>I understand and agree that data contained in this application in this application form will be used for volunteer recruitment purposes and will be held on a computer database. I also agree Vision For Vulnerable Communities Foundation holding this form in paper format in a secure area.</p>
-                <p>I confirm that the information I have given is correct and complete and that any false statements or omissions my results in my services to be terminated.</p>
-                <p>Are you aged under 16?</p> Yes or No
-                If you answered Yes, please ensure that part 12 is completed.
+                <p><input type="checkbox" name="declarationCheck1" value="declarationCheck1"> I understand and agree that data contained in this application in this application form will be used for volunteer recruitment purposes and will be held on a computer database. I also agree Vision For Vulnerable Communities Foundation holding this form in paper format in a secure area.</p>
+                <p><input type="checkbox" name="declarationCheck2" value="declarationCheck2"> I confirm that the information I have given is correct and complete and that any false statements or omissions my results in my services to be terminated.</p>
+                <p>Are you aged under 16?</br>
+                <input type="radio" id="under16" title="under16" value="yes" /> Yes 
+                <input type="radio" id="under16" title="under16" value="no" /> No </p>
+                <p>If you answered Yes, please ensure that part 12 is completed.</p>
                 <h2>Part 14-Confidential (equal opportunities monitoring)</h2>
                 <p>How would you describe your religion or belief?<br/>
                     <input type="radio" name="religion" value="bornAgain"> Born again Christian<br/>
@@ -290,8 +292,8 @@
                 </p>
                 <p>Do you have any disability?<br/>
                 <input type="radio" id="disability" title="disability" value="yes" /> Yes 
-                <input type="radio" id="disability" title="disability" value="no" /> No <br/>
-                How would you describe your cultural or ethnic origin?<br/>
+                <input type="radio" id="disability" title="disability" value="no" /> No </p>
+                <p>How would you describe your cultural or ethnic origin?<br/>
                 <textarea name="culture" id="culture"></textarea></p>
 
 
