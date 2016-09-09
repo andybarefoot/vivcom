@@ -31,8 +31,13 @@
                     <input type="text" name="project" id="project"><br/>
                     
                     <label for="location">Location:</label>
-                    <input type="text" name="location" id="location"><br/>
-                </p>
+                    <input type="text" name="location" id="location"></p>
+                <p>Tick the volunteer package you are interested in:<br/>
+                <input type="radio" name="packageType" value="solo" checked> Solo volunteering<br/>
+                <input type="radio" name="packageType" value="group"> Group volunteering<br/>
+                <input type="radio" name="packageType" value="family"> Family volunteering<br/>
+                <input type="radio" name="packageType" value="tailor"> Tailor made volunteering<br/>
+                <input type="radio" name="packageType" value="corporate"> Corporate volunteering</p>
 
                 <h2>Part 2 - Personal Information</h2>
                 <p>
@@ -77,14 +82,14 @@
                 </p>
                 
                 <h2>Part 3 - How did you hear about our organization</h2>                
-                <p><input type="radio" name="hearAbout" value="mouth">Word of Mouth<br>
+                <p><input type="radio" name="hearAbout" value="mouth" checked>Word of Mouth<br>
                 <input type="radio" name="hearAbout" value="school">School, college, university<br>
                 <input type="radio" name="hearAbout" value="event">Event<br>
                 <input type="radio" name="hearAbout" value="internet">Internet<br>
                 <input type="radio" name="hearAbout" value="media">Media (TV, Radio, Newspaper)<br>
                 <input type="radio" name="hearAbout" value="leaflet">Leaflet or Poster<br>
                 <input type="radio" name="hearAbout" value="volunteer">Volunteer Centre<br>
-                <input type="radio" name="hearAbout" value="Other">Other, please give details <input type="text" name="other" id="other"></p>
+                <input type="radio" name="hearAbout" value="Other">Other, please give details <input type="text" name="hearAboutOther" id="other"></p>
 
                 <h2>Part 4 - Your interests and reasons for applying to volunteer</h2>                
                 <p>
@@ -218,8 +223,8 @@
                 <h2>Part 9 - Emergency contact details</h2>
                 <p>Please give details of someone we may contact in an emergency if needed.</p>
                 <p>
-                    <label for="contactName">Full name:</label>
-                    <input type="text" name="contactfirstName" id="contactfirstName"><br/>
+                    <label for="contactFullName">Full name:</label>
+                    <input type="text" name="contactFullName" id="contactFullName"><br/>
                     
                      <label for="contactdaytel"> Day time phone number:</label>
                     <input type="text" name="contactdaytel" id="contactdaytel"><br/>
@@ -265,8 +270,8 @@
                 <p><input type="checkbox" name="guardianCheck1" value="guardianCheck1"> I give permissions for the above person to volunteer with your organization and to hold their details on file.</p>
                 <p><input type="checkbox" name="guardianCheck2" value="guardianCheck2"> I understand that this organization will ask the above person to agree to adhere to all relevant policies and procedures and sign forms during training appropriate to their role.</p>
                 <p>
-                    <label for="guardianRelationshipName">Relationship to prospective volunteer:</label>
-                    <input type="text" name="guardianRelationshipName" id="guardianRelationshipName"><br/>
+                    <label for="guardianRelationship">Relationship to prospective volunteer:</label>
+                    <input type="text" name="guardianRelationship" id="guardianRelationship"><br/>
                 </p>
 
                 <h2>Part 13- Declaration</h2>
