@@ -22,10 +22,10 @@
                     </a>
                 </div>
                 <div id="legal1">
-                    Vision for Vulnerable Communities Foundation
+                    &copy; 2016 Vision for Vulnerable Communities Foundation
                 </div>
                 <div id="legal2">
-                    VIVCOM
+                    &copy; 2016 VIVCOM
                 </div>
             </div>
 

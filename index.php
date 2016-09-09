@@ -109,6 +109,8 @@
                     P.O BOX 72449<br/> Nabweru<br/> Wakiso<br/> (Uganda)</p>
                 <h2>Telephone:</h2>
                 <p>Tel: +256705152084<br/>Mob: +256775152084 / +256771874642</p>
+                <h2>WhatsApp:</h2>
+                <p>+256705152084</p>
             </div>
 <?php
     include 'includes/footer.php';

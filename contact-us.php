@@ -51,6 +51,9 @@
                         <li><a href="mailto:vivcomfoundation@gmail.com">vivcomfoundation@gmail.com</a></li>
                     </ul>
                 </p>
+                <h2>WhatsApp:</h2>
+                <p>+256705152084</p>
+
             </div>
 <?php
     include 'includes/footer.php';
