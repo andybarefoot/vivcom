@@ -72,6 +72,7 @@
                 <div class="featured-section">
                     <div class="feature"><img src="images/home/home12c.jpg" alt=""></div>  
                 </div>
+                <p class="button-holder"><a href="job-advert.php" class="button">Fundraiser Needed</a></p>
                 <p class="button-holder"><a href="fundraising-volunteer.php" class="button">Volunteer</a></p>
                 <p class="button-holder"><a href="sponsor-a-child.php" class="button">Sponsor a Child</a></p>
                 <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
@@ -79,6 +80,7 @@
 
             <div id="secondary-content">
                <h2>How You Can Help:</h2>
+                <p class="button-holder"><a href="job-advert.php" class="button">Fundraiser Needed</a></p>
                 <p class="button-holder"><a href="sponsor-a-child.php" class="button">Sponsor a Child</a></p>
                 <p class="button-holder"><a href="fundraising-volunteer.php" class="button">Volunteer Now</a></p>
                 <p class="button-holder"><a href="donate.php" class="button">Donate Now</a></p>
