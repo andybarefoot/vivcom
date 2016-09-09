@@ -16,7 +16,7 @@ $address2 = htmlspecialchars(trim($_POST["address2"]));
 $city = htmlspecialchars(trim($_POST["city"]));
 $country = htmlspecialchars(trim($_POST["country"]));
 
-$to = "andy@andybarefoot.com";
+$to = "syrillkizza@gmail.com";
 $subject = "VIVCOM Donation";
 $message = "Form contents:\n";
 

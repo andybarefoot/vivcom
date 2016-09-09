@@ -29,7 +29,7 @@ if($_POST["under16"]!=="no"){
     }
 }
 
-$to = "andy@andybarefoot.com";
+$to = "syrillkizza@gmail.com";
 $subject = "VIVCOM Volunteer Application Form";
 $message = "Form contents:\n\n";
 

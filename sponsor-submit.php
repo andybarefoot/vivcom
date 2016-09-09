@@ -63,7 +63,7 @@ if ($acknowledgement !== "acknowledgement") {
     $dataClean = false;
 }
 
-$to = "andy@andybarefoot.com";
+$to = "syrillkizza@gmail.com";
 $subject = "VIVCOM Sponsor a Child Application";
 $message = "Form contents:\n";
 $message .= "Title: ".$title."\n";
